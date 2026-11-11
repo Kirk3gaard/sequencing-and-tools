@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sequencing & Tools</title>
+<meta name="description" content="Interactive overview of sequencing platforms and the tools that process their data, from raw signal to annotated MAGs. Versions refreshed weekly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <div class="kicker">Microbial Metagenomics · Aalborg University</div>
+      <h1>Sequencing <span>&amp;</span> Tools</h1>
+      <p class="lede">Every step from raw signal to annotated genome, for nanopore, PacBio HiFi and short-read platforms. Pick a platform to see the tools that apply, with the latest release and how actively each is maintained. Steps marked <b class="flag-a">artefact</b> handle read problems basecallers leave behind and are the ones most often skipped.</p>
+    </div>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="controls" role="search">
+    <div class="seg" id="platformSeg" role="radiogroup" aria-label="Platform">
+      <button data-p="all" role="radio">All</button>
+      <button data-p="ont" role="radio">Nanopore</button>
+      <button data-p="hifi" role="radio">PacBio HiFi</button>
+      <button data-p="sr" role="radio">Short read</button>
+    </div>
+    <input id="q" type="search" placeholder="Search tools, e.g. adapter, binning, methylation" aria-label="Search tools">
+    <label class="tog"><input type="checkbox" id="onlyArtefact"> Artefact steps only</label>
+    <label class="tog"><input type="checkbox" id="showLegacy"> Show legacy</label>
+  </div>
+
+  <nav class="rail" id="rail" aria-label="Pipeline steps"></nav>
+
+  <section class="recent" id="recentSec">
+    <h2 class="h2">Released in the last 30 days</h2>
+    <div class="recent-list" id="recent"></div>
+  </section>
+
+  <main id="steps"></main>
+
+  <section id="platforms">
+    <div class="sec-head"><div class="tag">Platforms</div><h2>Sequencing platforms</h2><p>What each platform produces and where it fits in environmental metagenomics.</p></div>
+    <div class="pgrid" id="pgrid"></div>
+  </section>
+
+  <footer>
+    <span>Data: <a href="data/catalogue.json">catalogue.json</a> · <a href="data/versions.json">versions.json</a> · <a href="data/platforms.json">platforms.json</a></span>
+    <span>Versions refreshed weekly from GitHub releases and bioconda. Missing a tool? <a href="https://github.com/Kirk3gaard/sequencing-and-tools/issues/new">Open an issue</a>.</span>
+  </footer>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

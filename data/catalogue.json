@@ -1,0 +1,2047 @@
+{
+ "steps": [
+  {
+   "id": "acq",
+   "name": "Acquisition & signal",
+   "desc": "Run control, raw signal formats, adaptive sampling"
+  },
+  {
+   "id": "basecall",
+   "name": "Basecalling",
+   "desc": "Signal or image to bases, plus modified bases"
+  },
+  {
+   "id": "trim",
+   "name": "Demux, adapters & artefacts",
+   "desc": "Barcodes, adapters, chimeras, duplex pairs — the step most often skipped"
+  },
+  {
+   "id": "qc",
+   "name": "Read QC & filtering",
+   "desc": "Length/quality summaries, filtering, subsampling"
+  },
+  {
+   "id": "correct",
+   "name": "Read correction",
+   "desc": "Error correction of reads before assembly"
+  },
+  {
+   "id": "map",
+   "name": "Read mapping",
+   "desc": "Aligning reads to references or assemblies"
+  },
+  {
+   "id": "profile",
+   "name": "Read-based profiling",
+   "desc": "Taxonomic classification and abundance from reads"
+  },
+  {
+   "id": "assemble",
+   "name": "Assembly",
+   "desc": "Metagenome and isolate assembly, plasmids, circularisation"
+  },
+  {
+   "id": "polish",
+   "name": "Polishing",
+   "desc": "Consensus correction of assemblies"
+  },
+  {
+   "id": "bin",
+   "name": "Binning",
+   "desc": "Grouping contigs into MAGs"
+  },
+  {
+   "id": "magqc",
+   "name": "MAG QC & dereplication",
+   "desc": "Completeness, contamination, chimerism, ANI clustering"
+  },
+  {
+   "id": "taxonomy",
+   "name": "Genome taxonomy",
+   "desc": "Placing genomes and MAGs in a taxonomy"
+  },
+  {
+   "id": "annotate",
+   "name": "Annotation",
+   "desc": "Genes, function, BGCs, AMR, mobile elements, viruses"
+  },
+  {
+   "id": "methyl",
+   "name": "Methylation & epigenetics",
+   "desc": "Modified-base pileups, motifs, methylation-aware binning"
+  },
+  {
+   "id": "variants",
+   "name": "Variants & strains",
+   "desc": "SNVs, SVs, strain haplotypes"
+  },
+  {
+   "id": "coverage",
+   "name": "Coverage & sketching",
+   "desc": "Abundance, depth, k-mer sketches, ANI"
+  },
+  {
+   "id": "workflow",
+   "name": "Workflows",
+   "desc": "End-to-end pipelines and workflow engines"
+  },
+  {
+   "id": "viz",
+   "name": "Visualisation",
+   "desc": "Graphs, alignments, MAG exploration"
+  }
+ ],
+ "tools": [
+  {
+   "id": "minknow",
+   "name": "MinKNOW",
+   "step": "acq",
+   "platforms": [
+    "ont"
+   ],
+   "repo": null,
+   "bioconda": null,
+   "url": "https://nanoporetech.com/software/devices/minknow",
+   "desc": "ONT instrument control software; writes POD5 and runs live basecalling.",
+   "note": "Version is set per device; check the Software Release Notes before a big run.",
+   "flags": []
+  },
+  {
+   "id": "pod5",
+   "name": "pod5",
+   "step": "acq",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/pod5-file-format",
+   "bioconda": "pod5",
+   "url": "https://github.com/nanoporetech/pod5-file-format",
+   "desc": "Reference library and CLI for ONT's POD5 raw-signal format.",
+   "note": "Use for merging/subsetting raw data before re-basecalling.",
+   "flags": []
+  },
+  {
+   "id": "slow5tools",
+   "name": "slow5tools",
+   "step": "acq",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "hasindu2008/slow5tools",
+   "bioconda": "slow5tools",
+   "url": "https://github.com/hasindu2008/slow5tools",
+   "desc": "Convert, index and subset raw signal in the open SLOW5/BLOW5 format.",
+   "note": "Compact archival alternative to POD5.",
+   "flags": []
+  },
+  {
+   "id": "readfish",
+   "name": "readfish",
+   "step": "acq",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "LooseLab/readfish",
+   "bioconda": null,
+   "url": "https://github.com/LooseLab/readfish",
+   "desc": "Adaptive sampling (read-until) with custom targets and logic.",
+   "note": "For depletion/enrichment beyond the MinKNOW built-in.",
+   "flags": []
+  },
+  {
+   "id": "bclconvert",
+   "name": "BCL Convert / DRAGEN",
+   "step": "acq",
+   "platforms": [
+    "sr"
+   ],
+   "repo": null,
+   "bioconda": null,
+   "url": "https://support.illumina.com/sequencing/sequencing_software/bcl-convert.html",
+   "desc": "Illumina BCL to FASTQ conversion and demultiplexing.",
+   "note": "Proprietary; adapter trimming optional in sample sheet.",
+   "flags": []
+  },
+  {
+   "id": "bases2fastq",
+   "name": "bases2fastq",
+   "step": "acq",
+   "platforms": [
+    "sr"
+   ],
+   "repo": null,
+   "bioconda": null,
+   "url": "https://docs.elembio.io/docs/bases2fastq/",
+   "desc": "Element AVITI base-file to FASTQ conversion and demultiplexing.",
+   "note": "Proprietary.",
+   "flags": []
+  },
+  {
+   "id": "dorado",
+   "name": "Dorado",
+   "step": "basecall",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/dorado",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/dorado",
+   "desc": "ONT's production basecaller: simplex, duplex, modified bases, demux, trim, correct, polish.",
+   "note": "Model choice (fast/hac/sup, version) changes accuracy and artefacts — record it per dataset.",
+   "flags": []
+  },
+  {
+   "id": "bonito",
+   "name": "Bonito",
+   "step": "basecall",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/bonito",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/bonito",
+   "desc": "ONT research basecaller for training custom models.",
+   "note": "Use only to train or test models; Dorado for production.",
+   "flags": []
+  },
+  {
+   "id": "remora",
+   "name": "Remora",
+   "step": "basecall",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/remora",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/remora",
+   "desc": "Training framework for modified-base models used by Dorado.",
+   "note": "Custom mod models, e.g. new bacterial motifs.",
+   "flags": []
+  },
+  {
+   "id": "smrtlink",
+   "name": "SMRT Link / on-instrument HiFi",
+   "step": "basecall",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": null,
+   "bioconda": null,
+   "url": "https://www.pacb.com/support/software-downloads/",
+   "desc": "PacBio's on-instrument consensus (HiFi) and kinetics-based base modification calling.",
+   "note": "Revio/Vega output HiFi BAM with 5mC (and 6mA) tags directly.",
+   "flags": []
+  },
+  {
+   "id": "guppy",
+   "name": "Guppy",
+   "step": "basecall",
+   "platforms": [
+    "ont"
+   ],
+   "repo": null,
+   "bioconda": null,
+   "url": "https://nanoporetech.com",
+   "desc": "Former ONT basecaller.",
+   "note": "Superseded by Dorado; R9 data only.",
+   "flags": [
+    "legacy"
+   ]
+  },
+  {
+   "id": "dorado_trim",
+   "name": "Dorado demux / trim",
+   "step": "trim",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/dorado",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/dorado",
+   "desc": "Barcode classification and adapter/primer trimming inside Dorado.",
+   "note": "Trims read ends only — internal adapters and chimeras survive.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "porechop_abi",
+   "name": "Porechop_ABI",
+   "step": "trim",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "bonsai-team/Porechop_ABI",
+   "bioconda": "porechop_abi",
+   "url": "https://github.com/bonsai-team/Porechop_ABI",
+   "desc": "Infers adapter sequences from the reads themselves and trims ends and middles.",
+   "note": "Catches unknown/kit-mismatched adapters and splits reads with middle adapters.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "porechop",
+   "name": "Porechop",
+   "step": "trim",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "rrwick/Porechop",
+   "bioconda": "porechop",
+   "url": "https://github.com/rrwick/Porechop",
+   "desc": "Original ONT adapter trimmer with known-adapter database.",
+   "note": "Unmaintained since 2018; use Porechop_ABI.",
+   "flags": [
+    "artefact",
+    "legacy"
+   ]
+  },
+  {
+   "id": "duplex_tools",
+   "name": "duplex-tools",
+   "step": "trim",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/duplex-tools",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/duplex-tools",
+   "desc": "Finds duplex pairs and splits reads at internal adapters (split_on_adapter).",
+   "note": "Removes concatenated/chimeric reads that inflate N50 and cause misassemblies.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "yacrd",
+   "name": "yacrd",
+   "step": "trim",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "natir/yacrd",
+   "bioconda": "yacrd",
+   "url": "https://github.com/natir/yacrd",
+   "desc": "Detects and removes chimeric and low-coverage regions via all-vs-all overlaps.",
+   "note": "Chimera screen before assembly.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "pychopper",
+   "name": "Pychopper",
+   "step": "trim",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "epi2me-labs/pychopper",
+   "bioconda": "pychopper",
+   "url": "https://github.com/epi2me-labs/pychopper",
+   "desc": "Identifies, orients and trims full-length cDNA reads.",
+   "note": "Transcriptomics only.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "lima",
+   "name": "lima",
+   "step": "trim",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": null,
+   "bioconda": "lima",
+   "url": "https://lima.how",
+   "desc": "PacBio barcode demultiplexing and primer removal.",
+   "note": "Standard HiFi demultiplexer.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "skera",
+   "name": "skera",
+   "step": "trim",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": null,
+   "bioconda": "pbskera",
+   "url": "https://skera.how",
+   "desc": "Splits Kinnex/MAS-Seq concatenated arrays into segmented reads.",
+   "note": "Required for Kinnex 16S and RNA.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "hifiadapterfilt",
+   "name": "HiFiAdapterFilt",
+   "step": "trim",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": "sheinasim/HiFiAdapterFilt",
+   "bioconda": "hifiadapterfilt",
+   "url": "https://github.com/sheinasim/HiFiAdapterFilt",
+   "desc": "Removes HiFi reads containing residual adapter sequence.",
+   "note": "Residual adapters still occur in HiFi and break assemblies.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "cutadapt",
+   "name": "cutadapt",
+   "step": "trim",
+   "platforms": [
+    "sr",
+    "ont",
+    "hifi"
+   ],
+   "repo": "marcelm/cutadapt",
+   "bioconda": "cutadapt",
+   "url": "https://github.com/marcelm/cutadapt",
+   "desc": "General adapter/primer trimming and demultiplexing.",
+   "note": "Amplicon primer removal on any platform.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "fastp",
+   "name": "fastp",
+   "step": "trim",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "OpenGene/fastp",
+   "bioconda": "fastp",
+   "url": "https://github.com/OpenGene/fastp",
+   "desc": "All-in-one short-read trimming, filtering and QC report.",
+   "note": "Default first step for Illumina/Element/MGI reads.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "bbduk",
+   "name": "BBDuk (BBTools)",
+   "step": "trim",
+   "platforms": [
+    "sr"
+   ],
+   "repo": null,
+   "bioconda": "bbmap",
+   "url": "https://sourceforge.net/projects/bbmap/",
+   "desc": "k-mer based adapter, contaminant and phiX removal.",
+   "note": "Fast decontamination of short reads.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "nanoplot",
+   "name": "NanoPlot",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "wdecoster/NanoPlot",
+   "bioconda": "nanoplot",
+   "url": "https://github.com/wdecoster/NanoPlot",
+   "desc": "Length/quality plots and stats for long reads.",
+   "note": "Quick per-run summary.",
+   "flags": []
+  },
+  {
+   "id": "nanocomp",
+   "name": "NanoComp",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "wdecoster/nanocomp",
+   "bioconda": "nanocomp",
+   "url": "https://github.com/wdecoster/nanocomp",
+   "desc": "Compare several long-read datasets side by side.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "cramino",
+   "name": "cramino",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "wdecoster/cramino",
+   "bioconda": "cramino",
+   "url": "https://github.com/wdecoster/cramino",
+   "desc": "Very fast summary stats from BAM/CRAM.",
+   "note": "Stats straight from unaligned Dorado BAMs.",
+   "flags": []
+  },
+  {
+   "id": "chopper",
+   "name": "chopper",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "wdecoster/chopper",
+   "bioconda": "chopper",
+   "url": "https://github.com/wdecoster/chopper",
+   "desc": "Rust filter/trimmer for long reads by quality, length and contaminants.",
+   "note": "Replaces NanoFilt.",
+   "flags": []
+  },
+  {
+   "id": "filtlong",
+   "name": "Filtlong",
+   "step": "qc",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "rrwick/Filtlong",
+   "bioconda": "filtlong",
+   "url": "https://github.com/rrwick/Filtlong",
+   "desc": "Keeps the best reads by length and quality, optionally guided by short reads.",
+   "note": "Subset for isolate assembly.",
+   "flags": []
+  },
+  {
+   "id": "fastplong",
+   "name": "fastplong",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "OpenGene/fastplong",
+   "bioconda": "fastplong",
+   "url": "https://github.com/OpenGene/fastplong",
+   "desc": "fastp for long reads: adapter trimming, filtering, report.",
+   "note": "",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
+   "id": "seqkit",
+   "name": "SeqKit",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "shenwei356/seqkit",
+   "bioconda": "seqkit",
+   "url": "https://github.com/shenwei356/seqkit",
+   "desc": "Swiss-army knife for FASTA/Q manipulation and stats.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "rasusa",
+   "name": "Rasusa",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "mbhall88/rasusa",
+   "bioconda": "rasusa",
+   "url": "https://github.com/mbhall88/rasusa",
+   "desc": "Random subsampling to a target depth or base count.",
+   "note": "Fair comparisons across datasets.",
+   "flags": []
+  },
+  {
+   "id": "fastqc",
+   "name": "FastQC",
+   "step": "qc",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "s-andrews/FastQC",
+   "bioconda": "fastqc",
+   "url": "https://github.com/s-andrews/FastQC",
+   "desc": "Classic short-read QC report.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "multiqc",
+   "name": "MultiQC",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "MultiQC/MultiQC",
+   "bioconda": "multiqc",
+   "url": "https://github.com/MultiQC/MultiQC",
+   "desc": "Aggregates QC outputs from many tools into one report.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "dorado_correct",
+   "name": "Dorado correct (HERRO)",
+   "step": "correct",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/dorado",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/dorado",
+   "desc": "Haplotype-aware read correction of ONT reads (HERRO model).",
+   "note": "Built for single genomes; check strain collapse in metagenomes.",
+   "flags": []
+  },
+  {
+   "id": "herro",
+   "name": "HERRO",
+   "step": "correct",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "lbcb-sci/herro",
+   "bioconda": null,
+   "url": "https://github.com/lbcb-sci/herro",
+   "desc": "Deep-learning haplotype-aware read correction (standalone).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "canu_correct",
+   "name": "Canu (correction)",
+   "step": "correct",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "marbl/canu",
+   "bioconda": "canu",
+   "url": "https://github.com/marbl/canu",
+   "desc": "Overlap-based correction and trimming, also a full assembler.",
+   "note": "Slow; mostly superseded by HERRO for ONT.",
+   "flags": []
+  },
+  {
+   "id": "minimap2",
+   "name": "minimap2",
+   "step": "map",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "lh3/minimap2",
+   "bioconda": "minimap2",
+   "url": "https://github.com/lh3/minimap2",
+   "desc": "De facto long-read aligner; also spliced and assembly alignment.",
+   "note": "Pick the preset matching chemistry (lr:hq for R10 SUP).",
+   "flags": []
+  },
+  {
+   "id": "pbmm2",
+   "name": "pbmm2",
+   "step": "map",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": "PacificBiosciences/pbmm2",
+   "bioconda": "pbmm2",
+   "url": "https://github.com/PacificBiosciences/pbmm2",
+   "desc": "minimap2 wrapper for PacBio BAMs keeping kinetics/tags.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "winnowmap",
+   "name": "Winnowmap2",
+   "step": "map",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "marbl/Winnowmap",
+   "bioconda": "winnowmap",
+   "url": "https://github.com/marbl/Winnowmap",
+   "desc": "minimap2 variant robust in repeats.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "bwamem2",
+   "name": "BWA-MEM2",
+   "step": "map",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "bwa-mem2/bwa-mem2",
+   "bioconda": "bwa-mem2",
+   "url": "https://github.com/bwa-mem2/bwa-mem2",
+   "desc": "Fast BWA-MEM reimplementation for short reads.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "bowtie2",
+   "name": "Bowtie 2",
+   "step": "map",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "BenLangmead/bowtie2",
+   "bioconda": "bowtie2",
+   "url": "https://github.com/BenLangmead/bowtie2",
+   "desc": "Short-read aligner, common in binning coverage steps.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "strobealign",
+   "name": "strobealign",
+   "step": "map",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "ksahlin/strobealign",
+   "bioconda": "strobealign",
+   "url": "https://github.com/ksahlin/strobealign",
+   "desc": "Very fast short-read aligner; has an abundance mode for binning.",
+   "note": "--aemb gives coverage for binning without BAMs.",
+   "flags": []
+  },
+  {
+   "id": "samtools",
+   "name": "samtools / HTSlib",
+   "step": "map",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "samtools/samtools",
+   "bioconda": "samtools",
+   "url": "https://github.com/samtools/samtools",
+   "desc": "SAM/BAM/CRAM manipulation.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "kraken2",
+   "name": "Kraken 2",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "DerrickWood/kraken2",
+   "bioconda": "kraken2",
+   "url": "https://github.com/DerrickWood/kraken2",
+   "desc": "k-mer read classifier.",
+   "note": "Database choice dominates results; false positives at low abundance.",
+   "flags": []
+  },
+  {
+   "id": "bracken",
+   "name": "Bracken",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "jenniferlu717/Bracken",
+   "bioconda": "bracken",
+   "url": "https://github.com/jenniferlu717/Bracken",
+   "desc": "Re-estimates abundances from Kraken output.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "centrifuger",
+   "name": "Centrifuger",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "mourisl/centrifuger",
+   "bioconda": "centrifuger",
+   "url": "https://github.com/mourisl/centrifuger",
+   "desc": "Memory-efficient read classifier (compressed index).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "sylph",
+   "name": "sylph",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "bluenote-1577/sylph",
+   "bioconda": "sylph",
+   "url": "https://github.com/bluenote-1577/sylph",
+   "desc": "Fast ANI-based species profiling against GTDB and others.",
+   "note": "Strong default for profiling against GTDB.",
+   "flags": []
+  },
+  {
+   "id": "metabuli",
+   "name": "Metabuli",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "steineggerlab/Metabuli",
+   "bioconda": "metabuli",
+   "url": "https://github.com/steineggerlab/Metabuli",
+   "desc": "Classification using DNA and amino-acid k-mers jointly.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "emu",
+   "name": "Emu",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "treangenlab/emu",
+   "bioconda": "emu",
+   "url": "https://github.com/treangenlab/emu",
+   "desc": "Full-length 16S abundance estimation by EM.",
+   "note": "For long-read 16S amplicons.",
+   "flags": []
+  },
+  {
+   "id": "metaphlan",
+   "name": "MetaPhlAn 4",
+   "step": "profile",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "biobakery/MetaPhlAn",
+   "bioconda": "metaphlan",
+   "url": "https://github.com/biobakery/MetaPhlAn",
+   "desc": "Marker-gene profiler.",
+   "note": "Short-read oriented; human-gut biased database.",
+   "flags": []
+  },
+  {
+   "id": "motus",
+   "name": "mOTUs",
+   "step": "profile",
+   "platforms": [
+    "sr",
+    "ont"
+   ],
+   "repo": "motu-tool/mOTUs",
+   "bioconda": "motus",
+   "url": "https://github.com/motu-tool/mOTUs",
+   "desc": "Marker-gene profiler including unknown species.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "melon",
+   "name": "Melon",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "xinehc/melon",
+   "bioconda": "melon",
+   "url": "https://github.com/xinehc/melon",
+   "desc": "Long-read marker-gene profiling with genome-copy estimates.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "ganon",
+   "name": "ganon",
+   "step": "profile",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "pirovc/ganon",
+   "bioconda": "ganon",
+   "url": "https://github.com/pirovc/ganon",
+   "desc": "Classification and profiling with easy custom/NCBI databases.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "metaflye",
+   "name": "metaFlye (Flye)",
+   "step": "assemble",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "mikolmogorov/Flye",
+   "bioconda": "flye",
+   "url": "https://github.com/mikolmogorov/Flye",
+   "desc": "Repeat-graph assembler with metagenome mode.",
+   "note": "Long-time long-read metagenome default.",
+   "flags": []
+  },
+  {
+   "id": "myloasm",
+   "name": "myloasm",
+   "step": "assemble",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "bluenote-1577/myloasm",
+   "bioconda": "myloasm",
+   "url": "https://github.com/bluenote-1577/myloasm",
+   "desc": "Strain-resolving metagenome assembler for R10 and HiFi.",
+   "note": "New; worth benchmarking against metaFlye.",
+   "flags": []
+  },
+  {
+   "id": "metamdbg",
+   "name": "metaMDBG",
+   "step": "assemble",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "GaetanBenoitDev/metaMDBG",
+   "bioconda": "metamdbg",
+   "url": "https://github.com/GaetanBenoitDev/metaMDBG",
+   "desc": "Minimizer de Bruijn graph metagenome assembler.",
+   "note": "Fast, low memory; ONT support since v1.",
+   "flags": []
+  },
+  {
+   "id": "hifiasm",
+   "name": "hifiasm",
+   "step": "assemble",
+   "platforms": [
+    "hifi",
+    "ont"
+   ],
+   "repo": "chhylp123/hifiasm",
+   "bioconda": "hifiasm",
+   "url": "https://github.com/chhylp123/hifiasm",
+   "desc": "Haplotype-resolved assembler; ONT simplex (--ont) supported.",
+   "note": "Isolates and eukaryotes.",
+   "flags": []
+  },
+  {
+   "id": "hifiasm_meta",
+   "name": "hifiasm-meta",
+   "step": "assemble",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": "xfengnefx/hifiasm-meta",
+   "bioconda": "hifiasm_meta",
+   "url": "https://github.com/xfengnefx/hifiasm-meta",
+   "desc": "Metagenome mode of hifiasm for HiFi.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "autocycler",
+   "name": "Autocycler",
+   "step": "assemble",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "rrwick/Autocycler",
+   "bioconda": "autocycler",
+   "url": "https://github.com/rrwick/Autocycler",
+   "desc": "Automated consensus of multiple long-read isolate assemblies.",
+   "note": "Successor to Trycycler.",
+   "flags": []
+  },
+  {
+   "id": "canu",
+   "name": "Canu",
+   "step": "assemble",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "marbl/canu",
+   "bioconda": "canu",
+   "url": "https://github.com/marbl/canu",
+   "desc": "Overlap-layout-consensus assembler.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "raven",
+   "name": "Raven",
+   "step": "assemble",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "lbcb-sci/raven",
+   "bioconda": "raven-assembler",
+   "url": "https://github.com/lbcb-sci/raven",
+   "desc": "Fast OLC assembler.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "megahit",
+   "name": "MEGAHIT",
+   "step": "assemble",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "voutcn/megahit",
+   "bioconda": "megahit",
+   "url": "https://github.com/voutcn/megahit",
+   "desc": "Memory-efficient short-read metagenome assembler.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "spades",
+   "name": "SPAdes / metaSPAdes",
+   "step": "assemble",
+   "platforms": [
+    "sr",
+    "ont",
+    "hifi"
+   ],
+   "repo": "ablab/spades",
+   "bioconda": "spades",
+   "url": "https://github.com/ablab/spades",
+   "desc": "de Bruijn assembler with metagenome and hybrid modes.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "unicycler",
+   "name": "Unicycler",
+   "step": "assemble",
+   "platforms": [
+    "sr",
+    "ont"
+   ],
+   "repo": "rrwick/Unicycler",
+   "bioconda": "unicycler",
+   "url": "https://github.com/rrwick/Unicycler",
+   "desc": "Hybrid isolate assembler.",
+   "note": "Long-read-first approaches now usually better.",
+   "flags": []
+  },
+  {
+   "id": "hybracter",
+   "name": "hybracter",
+   "step": "assemble",
+   "platforms": [
+    "ont",
+    "sr"
+   ],
+   "repo": "gbouras13/hybracter",
+   "bioconda": "hybracter",
+   "url": "https://github.com/gbouras13/hybracter",
+   "desc": "Automated long-read-first isolate assembly with plasmid recovery.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "plassembler",
+   "name": "plassembler",
+   "step": "assemble",
+   "platforms": [
+    "ont",
+    "sr"
+   ],
+   "repo": "gbouras13/plassembler",
+   "bioconda": "plassembler",
+   "url": "https://github.com/gbouras13/plassembler",
+   "desc": "Plasmid recovery from isolate data.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "dnaapler",
+   "name": "dnaapler",
+   "step": "assemble",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "gbouras13/dnaapler",
+   "bioconda": "dnaapler",
+   "url": "https://github.com/gbouras13/dnaapler",
+   "desc": "Reorients circular chromosomes/plasmids to start genes.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "medaka",
+   "name": "medaka",
+   "step": "polish",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/medaka",
+   "bioconda": "medaka",
+   "url": "https://github.com/nanoporetech/medaka",
+   "desc": "ONT consensus polishing with basecaller-matched models.",
+   "note": "Model must match basecaller version; can hurt metagenomes with strain mixtures.",
+   "flags": []
+  },
+  {
+   "id": "dorado_polish",
+   "name": "Dorado polish",
+   "step": "polish",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "nanoporetech/dorado",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/dorado",
+   "desc": "Medaka-style polishing inside Dorado (GPU).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "racon",
+   "name": "Racon",
+   "step": "polish",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "lbcb-sci/racon",
+   "bioconda": "racon",
+   "url": "https://github.com/lbcb-sci/racon",
+   "desc": "Generic consensus polisher.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "polypolish",
+   "name": "Polypolish",
+   "step": "polish",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "rrwick/Polypolish",
+   "bioconda": "polypolish",
+   "url": "https://github.com/rrwick/Polypolish",
+   "desc": "Short-read polishing using all alignments (repeat-aware).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "pypolca",
+   "name": "pypolca",
+   "step": "polish",
+   "platforms": [
+    "sr"
+   ],
+   "repo": "gbouras13/pypolca",
+   "bioconda": "pypolca",
+   "url": "https://github.com/gbouras13/pypolca",
+   "desc": "Python POLCA short-read polisher.",
+   "note": "Pair with Polypolish.",
+   "flags": []
+  },
+  {
+   "id": "semibin2",
+   "name": "SemiBin2",
+   "step": "bin",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "BigDataBiology/SemiBin",
+   "bioconda": "semibin",
+   "url": "https://github.com/BigDataBiology/SemiBin",
+   "desc": "Self-supervised binning with long-read mode.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "comebin",
+   "name": "COMEBin",
+   "step": "bin",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "ziyewang/COMEBin",
+   "bioconda": "comebin",
+   "url": "https://github.com/ziyewang/COMEBin",
+   "desc": "Contrastive-learning binner.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "vamb",
+   "name": "VAMB / TaxVAMB",
+   "step": "bin",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "RasmussenLab/vamb",
+   "bioconda": "vamb",
+   "url": "https://github.com/RasmussenLab/vamb",
+   "desc": "Variational-autoencoder binner, optional taxonomy guidance.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "metabat2",
+   "name": "MetaBAT 2",
+   "step": "bin",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": null,
+   "bioconda": "metabat2",
+   "url": "https://bitbucket.org/berkeleylab/metabat",
+   "desc": "Classic composition+coverage binner.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "graphmb",
+   "name": "GraphMB",
+   "step": "bin",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "MicrobialDarkMatter/GraphMB",
+   "bioconda": "graphmb",
+   "url": "https://github.com/MicrobialDarkMatter/GraphMB",
+   "desc": "Uses the assembly graph to bin long-read assemblies.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "binette",
+   "name": "Binette",
+   "step": "bin",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "genotoul-bioinfo/Binette",
+   "bioconda": "binette",
+   "url": "https://github.com/genotoul-bioinfo/Binette",
+   "desc": "Bin refinement across binners (DAS Tool successor approach).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "dastool",
+   "name": "DAS Tool",
+   "step": "bin",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "cmks/DAS_Tool",
+   "bioconda": "das_tool",
+   "url": "https://github.com/cmks/DAS_Tool",
+   "desc": "Consensus bin selection.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "checkm2",
+   "name": "CheckM2",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "chklovski/CheckM2",
+   "bioconda": "checkm2",
+   "url": "https://github.com/chklovski/CheckM2",
+   "desc": "ML completeness/contamination for MAGs.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "checkm",
+   "name": "CheckM",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "Ecogenomics/CheckM",
+   "bioconda": "checkm-genome",
+   "url": "https://github.com/Ecogenomics/CheckM",
+   "desc": "Marker-gene completeness/contamination.",
+   "note": "Superseded by CheckM2 for most uses.",
+   "flags": [
+    "legacy"
+   ]
+  },
+  {
+   "id": "gunc",
+   "name": "GUNC",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "grp-bork/gunc",
+   "bioconda": "gunc",
+   "url": "https://github.com/grp-bork/gunc",
+   "desc": "Detects chimeric genomes.",
+   "note": "Catches chimerism CheckM misses.",
+   "flags": []
+  },
+  {
+   "id": "drep",
+   "name": "dRep",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "MrOlm/drep",
+   "bioconda": "drep",
+   "url": "https://github.com/MrOlm/drep",
+   "desc": "Genome dereplication by ANI.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "galah",
+   "name": "galah",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "wwood/galah",
+   "bioconda": "galah",
+   "url": "https://github.com/wwood/galah",
+   "desc": "Fast dereplication with skani/FastANI.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "quast",
+   "name": "QUAST / metaQUAST",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "ablab/quast",
+   "bioconda": "quast",
+   "url": "https://github.com/ablab/quast",
+   "desc": "Assembly evaluation, with references if available.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "busco",
+   "name": "BUSCO",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": null,
+   "bioconda": "busco",
+   "url": "https://busco.ezlab.org",
+   "desc": "Single-copy ortholog completeness.",
+   "note": "Eukaryotic bins.",
+   "flags": []
+  },
+  {
+   "id": "checkv",
+   "name": "CheckV",
+   "step": "magqc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": null,
+   "bioconda": "checkv",
+   "url": "https://bitbucket.org/berkeleylab/checkv",
+   "desc": "Viral genome completeness and contamination.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "gtdbtk",
+   "name": "GTDB-Tk",
+   "step": "taxonomy",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "Ecogenomics/GTDBTk",
+   "bioconda": "gtdbtk",
+   "url": "https://github.com/Ecogenomics/GTDBTk",
+   "desc": "GTDB classification of bacterial/archaeal genomes.",
+   "note": "Version must match the GTDB release.",
+   "flags": []
+  },
+  {
+   "id": "cat_bat",
+   "name": "CAT / BAT",
+   "step": "taxonomy",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "MGXlab/CAT_pack",
+   "bioconda": "cat",
+   "url": "https://github.com/MGXlab/CAT_pack",
+   "desc": "Contig and bin taxonomy from protein hits.",
+   "note": "Includes eukaryotes.",
+   "flags": []
+  },
+  {
+   "id": "bakta",
+   "name": "Bakta",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "oschwengers/bakta",
+   "bioconda": "bakta",
+   "url": "https://github.com/oschwengers/bakta",
+   "desc": "Standardised bacterial genome annotation.",
+   "note": "Successor to Prokka.",
+   "flags": []
+  },
+  {
+   "id": "prokka",
+   "name": "Prokka",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "tseemann/prokka",
+   "bioconda": "prokka",
+   "url": "https://github.com/tseemann/prokka",
+   "desc": "Rapid prokaryotic annotation.",
+   "note": "Little development; prefer Bakta.",
+   "flags": [
+    "legacy"
+   ]
+  },
+  {
+   "id": "pyrodigal",
+   "name": "Pyrodigal",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "althonos/pyrodigal",
+   "bioconda": "pyrodigal",
+   "url": "https://github.com/althonos/pyrodigal",
+   "desc": "Fast Prodigal gene calling in Python.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "eggnog",
+   "name": "eggNOG-mapper",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "eggnogdb/eggnog-mapper",
+   "bioconda": "eggnog-mapper",
+   "url": "https://github.com/eggnogdb/eggnog-mapper",
+   "desc": "Orthology-based functional annotation.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "dram",
+   "name": "DRAM",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "WrightonLabCSU/DRAM",
+   "bioconda": "dram",
+   "url": "https://github.com/WrightonLabCSU/DRAM",
+   "desc": "Metabolic annotation and summaries for MAGs.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "antismash",
+   "name": "antiSMASH",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "antismash/antismash",
+   "bioconda": "antismash",
+   "url": "https://github.com/antismash/antismash",
+   "desc": "Biosynthetic gene cluster detection.",
+   "note": "Long-read MAGs give far more complete BGCs.",
+   "flags": []
+  },
+  {
+   "id": "amrfinder",
+   "name": "AMRFinderPlus",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "ncbi/amr",
+   "bioconda": "ncbi-amrfinderplus",
+   "url": "https://github.com/ncbi/amr",
+   "desc": "NCBI AMR and virulence gene detection.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "genomad",
+   "name": "geNomad",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "apcamargo/genomad",
+   "bioconda": "genomad",
+   "url": "https://github.com/apcamargo/genomad",
+   "desc": "Virus and plasmid identification.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "diamond",
+   "name": "DIAMOND",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "bbuchfink/diamond",
+   "bioconda": "diamond",
+   "url": "https://github.com/bbuchfink/diamond",
+   "desc": "Fast protein alignment.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "mmseqs2",
+   "name": "MMseqs2",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "soedinglab/MMseqs2",
+   "bioconda": "mmseqs2",
+   "url": "https://github.com/soedinglab/MMseqs2",
+   "desc": "Sensitive fast search and clustering.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "kofamscan",
+   "name": "KofamScan",
+   "step": "annotate",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": null,
+   "bioconda": "kofamscan",
+   "url": "https://github.com/takaram/kofam_scan",
+   "desc": "KEGG Orthology assignment with HMMs.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "modkit",
+   "name": "modkit",
+   "step": "methyl",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "nanoporetech/modkit",
+   "bioconda": null,
+   "url": "https://github.com/nanoporetech/modkit",
+   "desc": "Modified-base pileups, motif search and DMR from BAM MM/ML tags.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "nanomotif",
+   "name": "nanomotif",
+   "step": "methyl",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "MicrobialDarkMatter/nanomotif",
+   "bioconda": "nanomotif",
+   "url": "https://github.com/MicrobialDarkMatter/nanomotif",
+   "desc": "De novo methylation motifs in MAGs, MTase linking, bin decontamination.",
+   "note": "Methylation-aware bin cleaning and plasmid assignment.",
+   "flags": []
+  },
+  {
+   "id": "microbemod",
+   "name": "MicrobeMod",
+   "step": "methyl",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "cultivarium/MicrobeMod",
+   "bioconda": null,
+   "url": "https://github.com/cultivarium/MicrobeMod",
+   "desc": "Bacterial methylation motifs and R-M system annotation.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "methylartist",
+   "name": "methylartist",
+   "step": "methyl",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "adamewing/methylartist",
+   "bioconda": "methylartist",
+   "url": "https://github.com/adamewing/methylartist",
+   "desc": "Methylation plots from modified-base BAMs.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "methbat",
+   "name": "MethBat",
+   "step": "methyl",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": "PacificBiosciences/MethBat",
+   "bioconda": null,
+   "url": "https://github.com/PacificBiosciences/MethBat",
+   "desc": "PacBio methylation analysis toolkit.",
+   "note": "Replaces pb-CpG-tools.",
+   "flags": []
+  },
+  {
+   "id": "pbcpg",
+   "name": "pb-CpG-tools",
+   "step": "methyl",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": "PacificBiosciences/pb-CpG-tools",
+   "bioconda": null,
+   "url": "https://github.com/PacificBiosciences/pb-CpG-tools",
+   "desc": "CpG pileups from HiFi.",
+   "note": "Superseded by MethBat.",
+   "flags": [
+    "legacy"
+   ]
+  },
+  {
+   "id": "clair3",
+   "name": "Clair3",
+   "step": "variants",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "HKU-BAL/Clair3",
+   "bioconda": "clair3",
+   "url": "https://github.com/HKU-BAL/Clair3",
+   "desc": "Deep-learning small-variant caller.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "sniffles2",
+   "name": "Sniffles2",
+   "step": "variants",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "fritzsedlazeck/Sniffles",
+   "bioconda": "sniffles",
+   "url": "https://github.com/fritzsedlazeck/Sniffles",
+   "desc": "Structural variant caller.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "instrain",
+   "name": "inStrain",
+   "step": "variants",
+   "platforms": [
+    "sr",
+    "hifi"
+   ],
+   "repo": "MrOlm/inStrain",
+   "bioconda": "instrain",
+   "url": "https://github.com/MrOlm/inStrain",
+   "desc": "Microdiversity and strain comparison in metagenomes.",
+   "note": "Built around short-read error profiles.",
+   "flags": []
+  },
+  {
+   "id": "strainy",
+   "name": "Strainy",
+   "step": "variants",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "katerinakazantseva/strainy",
+   "bioconda": "strainy",
+   "url": "https://github.com/katerinakazantseva/strainy",
+   "desc": "Strain phasing of long-read metagenome assemblies.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "floria",
+   "name": "Floria",
+   "step": "variants",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "bluenote-1577/floria",
+   "bioconda": "floria",
+   "url": "https://github.com/bluenote-1577/floria",
+   "desc": "Fast strain haplotype phasing in metagenomes.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "coverm",
+   "name": "CoverM",
+   "step": "coverage",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "wwood/CoverM",
+   "bioconda": "coverm",
+   "url": "https://github.com/wwood/CoverM",
+   "desc": "Read coverage per contig/genome.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "mosdepth",
+   "name": "mosdepth",
+   "step": "coverage",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "brentp/mosdepth",
+   "bioconda": "mosdepth",
+   "url": "https://github.com/brentp/mosdepth",
+   "desc": "Fast depth calculation.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "sourmash",
+   "name": "sourmash",
+   "step": "coverage",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "sourmash-bio/sourmash",
+   "bioconda": "sourmash",
+   "url": "https://github.com/sourmash-bio/sourmash",
+   "desc": "FracMinHash sketches, search and gather.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "skani",
+   "name": "skani",
+   "step": "coverage",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "bluenote-1577/skani",
+   "bioconda": "skani",
+   "url": "https://github.com/bluenote-1577/skani",
+   "desc": "Fast accurate ANI, robust to incomplete MAGs.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "mash",
+   "name": "Mash",
+   "step": "coverage",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "marbl/Mash",
+   "bioconda": "mash",
+   "url": "https://github.com/marbl/Mash",
+   "desc": "MinHash distance estimation.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "nfcore_mag",
+   "name": "nf-core/mag",
+   "step": "workflow",
+   "platforms": [
+    "sr",
+    "ont",
+    "hifi"
+   ],
+   "repo": "nf-core/mag",
+   "bioconda": null,
+   "url": "https://github.com/nf-core/mag",
+   "desc": "Assembly, binning and annotation pipeline.",
+   "note": "Short-read first; long-read support growing.",
+   "flags": []
+  },
+  {
+   "id": "nfcore_taxprofiler",
+   "name": "nf-core/taxprofiler",
+   "step": "workflow",
+   "platforms": [
+    "sr",
+    "ont",
+    "hifi"
+   ],
+   "repo": "nf-core/taxprofiler",
+   "bioconda": null,
+   "url": "https://github.com/nf-core/taxprofiler",
+   "desc": "Multi-profiler taxonomic profiling.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "wf_metagenomics",
+   "name": "wf-metagenomics",
+   "step": "workflow",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "epi2me-labs/wf-metagenomics",
+   "bioconda": null,
+   "url": "https://github.com/epi2me-labs/wf-metagenomics",
+   "desc": "EPI2ME read classification workflow (also 16S).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "wf_bacterial",
+   "name": "wf-bacterial-genomes",
+   "step": "workflow",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "epi2me-labs/wf-bacterial-genomes",
+   "bioconda": null,
+   "url": "https://github.com/epi2me-labs/wf-bacterial-genomes",
+   "desc": "EPI2ME isolate assembly and annotation.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "mmlong2",
+   "name": "mmlong2",
+   "step": "workflow",
+   "platforms": [
+    "ont",
+    "hifi"
+   ],
+   "repo": "Serka-M/mmlong2",
+   "bioconda": null,
+   "url": "https://github.com/Serka-M/mmlong2",
+   "desc": "Long-read MAG recovery workflow (Microflora Danica scale).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "aviary",
+   "name": "Aviary",
+   "step": "workflow",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "rhysnewell/aviary",
+   "bioconda": "aviary",
+   "url": "https://github.com/rhysnewell/aviary",
+   "desc": "Hybrid assembly, binning and annotation pipeline.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "snakemake",
+   "name": "Snakemake",
+   "step": "workflow",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "snakemake/snakemake",
+   "bioconda": "snakemake",
+   "url": "https://github.com/snakemake/snakemake",
+   "desc": "Python-based workflow engine.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "nextflow",
+   "name": "Nextflow",
+   "step": "workflow",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "nextflow-io/nextflow",
+   "bioconda": "nextflow",
+   "url": "https://github.com/nextflow-io/nextflow",
+   "desc": "Dataflow workflow engine behind nf-core and EPI2ME.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "bandageng",
+   "name": "BandageNG",
+   "step": "viz",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "asl/BandageNG",
+   "bioconda": null,
+   "url": "https://github.com/asl/BandageNG",
+   "desc": "Assembly graph visualisation (maintained Bandage fork).",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "igv",
+   "name": "IGV",
+   "step": "viz",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "igvteam/igv",
+   "bioconda": null,
+   "url": "https://github.com/igvteam/igv",
+   "desc": "Genome browser incl. methylation colouring.",
+   "note": "",
+   "flags": []
+  },
+  {
+   "id": "anvio",
+   "name": "anvi'o",
+   "step": "viz",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "merenlab/anvio",
+   "bioconda": null,
+   "url": "https://github.com/merenlab/anvio",
+   "desc": "Interactive metagenomics and pangenomics platform.",
+   "note": "",
+   "flags": []
+  }
+ ]
+}

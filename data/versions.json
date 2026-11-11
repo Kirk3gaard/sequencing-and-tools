@@ -1,0 +1,1937 @@
+{
+ "updated": "2026-11-11",
+ "tools": {
+  "minknow": {},
+  "pod5": {
+   "github": {
+    "version": "0.3.49",
+    "title": "0.3.49",
+    "date": "2026-10-08",
+    "href": "https://github.com/nanoporetech/pod5-file-format/releases/tag/0.3.49",
+    "kind": "release"
+   },
+   "last_commit": "2026-09-24",
+   "bioconda": {
+    "version": "0.3.49",
+    "date": "2026-10-11"
+   },
+   "version": "0.3.49",
+   "date": "2026-10-08",
+   "source": "github release"
+  },
+  "slow5tools": {
+   "github": {
+    "version": "v1.5.0",
+    "title": "slow5tools-v1.5.0",
+    "date": "2026-08-26",
+    "href": "https://github.com/hasindu2008/slow5tools/releases/tag/v1.5.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-26",
+   "bioconda": {
+    "version": "1.5.0",
+    "date": "2026-09-01"
+   },
+   "version": "1.5.0",
+   "date": "2026-08-26",
+   "source": "github release"
+  },
+  "readfish": {
+   "github": {
+    "version": "v2026.1.0",
+    "title": "v2026.1.0 Reducing workload bug fix",
+    "date": "2026-10-29",
+    "href": "https://github.com/LooseLab/readfish/releases/tag/v2026.1.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-29",
+   "version": "2026.1.0",
+   "date": "2026-10-29",
+   "source": "github release"
+  },
+  "bclconvert": {},
+  "bases2fastq": {},
+  "dorado": {
+   "github": {
+    "version": "v2.1.2",
+    "title": "v2.1.2",
+    "date": "2026-08-26",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-26",
+   "version": "2.1.2",
+   "date": "2026-08-26",
+   "source": "github release"
+  },
+  "bonito": {
+   "github": {
+    "version": "v1.1.0",
+    "title": "# v1.1.0",
+    "date": "2026-02-20",
+    "href": "https://github.com/nanoporetech/bonito/releases/tag/v1.1.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-02-20",
+   "version": "1.1.0",
+   "date": "2026-02-20",
+   "source": "github release"
+  },
+  "remora": {
+   "github": {
+    "version": "v3.3.0",
+    "title": "v3.3.0",
+    "date": "2024-09-17",
+    "href": "https://github.com/nanoporetech/remora/releases/tag/v3.3.0",
+    "kind": "release"
+   },
+   "last_commit": "2024-09-17",
+   "version": "3.3.0",
+   "date": "2024-09-17",
+   "source": "github release"
+  },
+  "smrtlink": {},
+  "guppy": {},
+  "dorado_trim": {
+   "github": {
+    "version": "v2.1.2",
+    "title": "v2.1.2",
+    "date": "2026-08-26",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-26",
+   "version": "2.1.2",
+   "date": "2026-08-26",
+   "source": "github release"
+  },
+  "porechop_abi": {
+   "github": {
+    "version": "v0.5.0",
+    "title": "v0.5.0 release",
+    "date": "2022-08-25",
+    "href": "https://github.com/bonsai-team/Porechop_ABI/releases/tag/v0.5.0",
+    "kind": "release"
+   },
+   "last_commit": "2023-12-11",
+   "bioconda": {
+    "version": "0.5.1",
+    "date": "2025-09-10"
+   },
+   "version": "0.5.1",
+   "date": "2025-09-10",
+   "source": "bioconda"
+  },
+  "porechop": {
+   "github": {
+    "version": "v0.2.4",
+    "title": "Porechop v0.2.4",
+    "date": "2018-10-19",
+    "href": "https://github.com/rrwick/Porechop/releases/tag/v0.2.4",
+    "kind": "release"
+   },
+   "last_commit": "2018-10-19",
+   "bioconda": {
+    "version": "0.2.4",
+    "date": "2020-04-03"
+   },
+   "version": "0.2.4",
+   "date": "2018-10-19",
+   "source": "github release"
+  },
+  "duplex_tools": {
+   "github": {
+    "version": "v0.3.3",
+    "title": "v0.3.3",
+    "date": "2023-05-30",
+    "href": "https://github.com/nanoporetech/duplex-tools/releases/tag/v0.3.3",
+    "kind": "release"
+   },
+   "last_commit": "2023-05-30",
+   "version": "0.3.3",
+   "date": "2023-05-30",
+   "source": "github release"
+  },
+  "yacrd": {
+   "github": {
+    "version": "v1.0.0",
+    "title": "Magby",
+    "date": "2022-03-01",
+    "href": "https://github.com/natir/yacrd/releases/tag/v1.0.0",
+    "kind": "release"
+   },
+   "last_commit": "2024-11-07",
+   "bioconda": {
+    "version": "1.0.0",
+    "date": "2022-03-01"
+   },
+   "version": "1.0.0",
+   "date": "2022-03-01",
+   "source": "github release"
+  },
+  "pychopper": {
+   "github": {
+    "version": "v2.7.10",
+    "title": "v2.7.10",
+    "date": "2024-07-25",
+    "href": "https://github.com/epi2me-labs/pychopper/releases/tag/v2.7.10",
+    "kind": "release"
+   },
+   "last_commit": "2024-07-25",
+   "bioconda": {
+    "version": "2.7.10",
+    "date": "2024-07-25"
+   },
+   "version": "2.7.10",
+   "date": "2024-07-25",
+   "source": "github release"
+  },
+  "lima": {
+   "bioconda": {
+    "version": "26.2.1",
+    "date": "2026-06-08"
+   },
+   "version": "26.2.1",
+   "date": "2026-06-08",
+   "source": "bioconda"
+  },
+  "skera": {
+   "bioconda": {
+    "version": "26.2.0",
+    "date": "2026-10-22"
+   },
+   "version": "26.2.0",
+   "date": "2026-10-22",
+   "source": "bioconda"
+  },
+  "hifiadapterfilt": {
+   "github": {
+    "version": "v3.0.0",
+    "title": "Third release",
+    "date": "2024-07-23",
+    "href": "https://github.com/sheinasim-USDA/HiFiAdapterFilt/releases/tag/v3.0.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-31",
+   "bioconda": {
+    "version": "3.0.0",
+    "date": "2024-11-25"
+   },
+   "version": "3.0.0",
+   "date": "2024-07-23",
+   "source": "github release"
+  },
+  "cutadapt": {
+   "github": {
+    "version": "v5.2",
+    "title": "v5.2",
+    "date": "2025-10-23",
+    "href": "https://github.com/marcelm/cutadapt/releases/tag/v5.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-05",
+   "bioconda": {
+    "version": "5.2",
+    "date": "2025-10-23"
+   },
+   "version": "5.2",
+   "date": "2025-10-23",
+   "source": "github release"
+  },
+  "fastp": {
+   "github": {
+    "version": "v1.4.0",
+    "title": "Release fastp v1.4.0",
+    "date": "2026-10-07",
+    "href": "https://github.com/OpenGene/fastp/releases/tag/v1.4.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-07",
+   "bioconda": {
+    "version": "1.4.0",
+    "date": "2026-10-07"
+   },
+   "version": "1.4.0",
+   "date": "2026-10-07",
+   "source": "github release"
+  },
+  "bbduk": {
+   "bioconda": {
+    "version": "40.05",
+    "date": "2026-10-17"
+   },
+   "version": "40.05",
+   "date": "2026-10-17",
+   "source": "bioconda"
+  },
+  "nanoplot": {
+   "github": {
+    "version": "v1.48.0",
+    "title": "v1.48.0",
+    "date": "2026-09-05",
+    "href": "https://github.com/wdecoster/NanoPlot/releases/tag/v1.48.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "1.48.0",
+    "date": "2026-09-06"
+   },
+   "version": "1.48.0",
+   "date": "2026-09-05",
+   "source": "github release"
+  },
+  "nanocomp": {
+   "github": {
+    "version": "1.25.6",
+    "title": "1.25.6",
+    "date": "2025-12-02",
+    "href": "https://github.com/wdecoster/nanocomp/releases/tag/1.25.6",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "1.25.6",
+    "date": "2025-12-02"
+   },
+   "version": "1.25.6",
+   "date": "2025-12-02",
+   "source": "github release"
+  },
+  "cramino": {
+   "github": {
+    "version": "v2.0.0",
+    "title": "v2.0.0: various breaking updates and fixes",
+    "date": "2026-09-24",
+    "href": "https://github.com/wdecoster/cramino/releases/tag/v2.0.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "2.0.0",
+    "date": "2026-09-24"
+   },
+   "version": "2.0.0",
+   "date": "2026-09-24",
+   "source": "github release"
+  },
+  "chopper": {
+   "github": {
+    "version": "v0.15.0",
+    "title": "v0.15.0",
+    "date": "2026-10-29",
+    "href": "https://github.com/wdecoster/chopper/releases/tag/v0.15.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-01",
+   "bioconda": {
+    "version": "0.15.0",
+    "date": "2026-11-01"
+   },
+   "version": "0.15.0",
+   "date": "2026-10-29",
+   "source": "github release"
+  },
+  "filtlong": {
+   "github": {
+    "version": "v0.3.1",
+    "title": "Filtlong v0.3.1",
+    "date": "2025-09-17",
+    "href": "https://github.com/rrwick/Filtlong/releases/tag/v0.3.1",
+    "kind": "release"
+   },
+   "last_commit": "2025-09-17",
+   "bioconda": {
+    "version": "0.3.1",
+    "date": "2025-09-18"
+   },
+   "version": "0.3.1",
+   "date": "2025-09-17",
+   "source": "github release"
+  },
+  "fastplong": {
+   "github": {
+    "version": "v0.7.1",
+    "title": "Release v0.7.1",
+    "date": "2026-09-11",
+    "href": "https://github.com/OpenGene/fastplong/releases/tag/v0.7.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-09-11",
+   "bioconda": {
+    "version": "0.7.1",
+    "date": "2026-09-14"
+   },
+   "version": "0.7.1",
+   "date": "2026-09-11",
+   "source": "github release"
+  },
+  "seqkit": {
+   "github": {
+    "version": "v2.14.0",
+    "title": "SeqKit v2.14.0",
+    "date": "2026-09-24",
+    "href": "https://github.com/shenwei356/seqkit/releases/tag/v2.14.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "2.14.0",
+    "date": "2026-09-24"
+   },
+   "version": "2.14.0",
+   "date": "2026-09-24",
+   "source": "github release"
+  },
+  "rasusa": {
+   "github": {
+    "version": "5.1.0",
+    "title": "v5.1.0",
+    "date": "2026-07-31",
+    "href": "https://github.com/mbhall88/rasusa/releases/tag/5.1.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-01",
+   "bioconda": {
+    "version": "5.1.0",
+    "date": "2026-07-31"
+   },
+   "version": "5.1.0",
+   "date": "2026-07-31",
+   "source": "github release"
+  },
+  "fastqc": {
+   "github": {
+    "version": "v0.13.0",
+    "title": "v0.13.0",
+    "date": "2026-10-02",
+    "href": "https://github.com/s-andrews/FastQC/releases/tag/v0.13.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-07",
+   "bioconda": {
+    "version": "0.13.0",
+    "date": "2026-10-04"
+   },
+   "version": "0.13.0",
+   "date": "2026-10-02",
+   "source": "github release"
+  },
+  "multiqc": {
+   "github": {
+    "version": "v1.35",
+    "title": "v1.35",
+    "date": "2026-05-13",
+    "href": "https://github.com/MultiQC/MultiQC/releases/tag/v1.35",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-06",
+   "bioconda": {
+    "version": "1.35",
+    "date": "2026-05-13"
+   },
+   "version": "1.35",
+   "date": "2026-05-13",
+   "source": "github release"
+  },
+  "dorado_correct": {
+   "github": {
+    "version": "v2.1.2",
+    "title": "v2.1.2",
+    "date": "2026-08-26",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-26",
+   "version": "2.1.2",
+   "date": "2026-08-26",
+   "source": "github release"
+  },
+  "herro": {
+   "github": {
+    "version": "v0.1.1",
+    "title": "HERRO v0.1.1",
+    "date": "2026-04-13",
+    "href": "https://github.com/lbcb-sci/herro/releases/tag/v0.1.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-06-05",
+   "version": "0.1.1",
+   "date": "2026-04-13",
+   "source": "github release"
+  },
+  "canu_correct": {
+   "github": {
+    "version": "v2.3",
+    "title": "Canu v2.3",
+    "date": "2025-04-09",
+    "href": "https://github.com/marbl/canu/releases/tag/v2.3",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-28",
+   "bioconda": {
+    "version": "2.3",
+    "date": "2024-12-17"
+   },
+   "version": "2.3",
+   "date": "2025-04-09",
+   "source": "github release"
+  },
+  "minimap2": {
+   "github": {
+    "version": "v2.31",
+    "title": "Minimap2-2.31 (r1302)",
+    "date": "2026-05-20",
+    "href": "https://github.com/lh3/minimap2/releases/tag/v2.31",
+    "kind": "release"
+   },
+   "last_commit": "2026-05-19",
+   "bioconda": {
+    "version": "2.31",
+    "date": "2026-05-20"
+   },
+   "version": "2.31",
+   "date": "2026-05-20",
+   "source": "github release"
+  },
+  "pbmm2": {
+   "github": {
+    "version": "v26.2.99",
+    "title": "Version 26.2.99",
+    "date": "2026-07-02",
+    "href": "https://github.com/PacificBiosciences/pbmm2/releases/tag/v26.2.99",
+    "kind": "release"
+   },
+   "last_commit": "2026-07-02",
+   "bioconda": {
+    "version": "26.2.99",
+    "date": "2026-07-02"
+   },
+   "version": "26.2.99",
+   "date": "2026-07-02",
+   "source": "github release"
+  },
+  "winnowmap": {
+   "github": {
+    "version": "v2.03",
+    "title": "Winnowmap 2.03",
+    "date": "2021-05-08",
+    "href": "https://github.com/marbl/Winnowmap/releases/tag/v2.03",
+    "kind": "release"
+   },
+   "last_commit": "2025-12-16",
+   "bioconda": {
+    "version": "2.03",
+    "date": "2021-05-08"
+   },
+   "version": "2.03",
+   "date": "2021-05-08",
+   "source": "github release"
+  },
+  "bwamem2": {
+   "github": {
+    "version": "v2.3",
+    "title": "Bwa-mem2-v2.3",
+    "date": "2025-06-30",
+    "href": "https://github.com/bwa-mem2/bwa-mem2/releases/tag/v2.3",
+    "kind": "release"
+   },
+   "last_commit": "2025-10-15",
+   "bioconda": {
+    "version": "2.3",
+    "date": "2025-07-02"
+   },
+   "version": "2.3",
+   "date": "2025-06-30",
+   "source": "github release"
+  },
+  "bowtie2": {
+   "github": {
+    "version": "v2.5.5",
+    "title": "v2.5.5",
+    "date": "2026-03-07",
+    "href": "https://github.com/BenLangmead/bowtie2/releases/tag/v2.5.5",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-07",
+   "bioconda": {
+    "version": "2.5.5",
+    "date": "2026-02-20"
+   },
+   "version": "2.5.5",
+   "date": "2026-03-07",
+   "source": "github release"
+  },
+  "strobealign": {
+   "github": {
+    "version": "v0.20.0",
+    "title": "Version 0.20.0",
+    "date": "2026-11-06",
+    "href": "https://github.com/ksahlin/strobealign/releases/tag/v0.20.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "0.20.0",
+    "date": "2026-11-06"
+   },
+   "version": "0.20.0",
+   "date": "2026-11-06",
+   "source": "github release"
+  },
+  "samtools": {
+   "github": {
+    "version": "1.25",
+    "title": "1.25",
+    "date": "2026-10-27",
+    "href": "https://github.com/samtools/samtools/releases/tag/1.25",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "1.25",
+    "date": "2026-10-27"
+   },
+   "version": "1.25",
+   "date": "2026-10-27",
+   "source": "github release"
+  },
+  "kraken2": {
+   "github": {
+    "version": "2.17.2",
+    "title": "v2.17.2",
+    "date": "2026-09-23",
+    "href": "https://github.com/DerrickWood/kraken2/releases/tag/2.17.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-06",
+   "bioconda": {
+    "version": "2.17.2",
+    "date": "2026-09-24"
+   },
+   "version": "2.17.2",
+   "date": "2026-09-23",
+   "source": "github release"
+  },
+  "bracken": {
+   "github": {
+    "version": "v3.1",
+    "title": "Bracken v3.1",
+    "date": "2025-02-26",
+    "href": "https://github.com/jenniferlu717/Bracken/releases/tag/v3.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-03-16",
+   "bioconda": {
+    "version": "3.1p1",
+    "date": "2026-06-10"
+   },
+   "version": "3.1p1",
+   "date": "2026-06-10",
+   "source": "bioconda"
+  },
+  "centrifuger": {
+   "github": {
+    "version": "v1.2.0",
+    "title": "Centrifuger v1.2.0",
+    "date": "2026-10-26",
+    "href": "https://github.com/mourisl/centrifuger/releases/tag/v1.2.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-26",
+   "bioconda": {
+    "version": "1.2.0",
+    "date": "2026-10-27"
+   },
+   "version": "1.2.0",
+   "date": "2026-10-26",
+   "source": "github release"
+  },
+  "sylph": {
+   "github": {
+    "version": "v1.0.0",
+    "title": "v1.0.0",
+    "date": "2026-09-14",
+    "href": "https://github.com/bluenote-1577/sylph/releases/tag/v1.0.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-08",
+   "bioconda": {
+    "version": "1.0.0",
+    "date": "2026-09-14"
+   },
+   "version": "1.0.0",
+   "date": "2026-09-14",
+   "source": "github release"
+  },
+  "metabuli": {
+   "github": {
+    "version": "1.2.0",
+    "title": "v1.2.0",
+    "date": "2026-04-06",
+    "href": "https://github.com/steineggerlab/Metabuli/releases/tag/1.2.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-18",
+   "bioconda": {
+    "version": "1.2.0",
+    "date": "2026-04-06"
+   },
+   "version": "1.2.0",
+   "date": "2026-04-06",
+   "source": "github release"
+  },
+  "emu": {
+   "github": {
+    "version": "v3.6.2",
+    "title": "v3.6.2",
+    "date": "2026-02-26",
+    "href": "https://github.com/treangenlab/emu/releases/tag/v3.6.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-04-05",
+   "bioconda": {
+    "version": "3.6.2",
+    "date": "2026-03-01"
+   },
+   "version": "3.6.2",
+   "date": "2026-02-26",
+   "source": "github release"
+  },
+  "metaphlan": {
+   "github": {
+    "version": "4.2.6",
+    "title": "4.2.6",
+    "date": "2026-07-28",
+    "href": "https://github.com/biobakery/MetaPhlAn/releases/tag/4.2.6",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "4.2.6",
+    "date": "2026-07-29"
+   },
+   "version": "4.2.6",
+   "date": "2026-07-28",
+   "source": "github release"
+  },
+  "motus": {
+   "github": {
+    "version": "4.1.0",
+    "title": "mOTUs 4.1.0",
+    "date": "2026-07-17",
+    "href": "https://github.com/motu-tool/mOTUs/releases/tag/4.1.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-07-17",
+   "bioconda": {
+    "version": "4.1.0",
+    "date": "2026-07-20"
+   },
+   "version": "4.1.0",
+   "date": "2026-07-17",
+   "source": "github release"
+  },
+  "melon": {
+   "github": {
+    "version": "v0.3.0",
+    "title": "v0.3.0",
+    "date": "2025-04-26",
+    "href": "https://github.com/xinehc/melon/releases/tag/v0.3.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-06-04",
+   "bioconda": {
+    "version": "0.3.0",
+    "date": "2025-04-27"
+   },
+   "version": "0.3.0",
+   "date": "2025-04-26",
+   "source": "github release"
+  },
+  "ganon": {
+   "github": {
+    "version": "v2.4.4",
+    "title": "ganon v2.4.4",
+    "date": "2026-10-06",
+    "href": "https://github.com/pirovc/ganon/releases/tag/v2.4.4",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-06",
+   "bioconda": {
+    "version": "2.4.4",
+    "date": "2026-10-07"
+   },
+   "version": "2.4.4",
+   "date": "2026-10-06",
+   "source": "github release"
+  },
+  "metaflye": {
+   "github": {
+    "version": "2.9.6",
+    "title": "Flye 2.9.6 release",
+    "date": "2025-05-02",
+    "href": "https://github.com/mikolmogorov/Flye/releases/tag/2.9.6",
+    "kind": "release"
+   },
+   "last_commit": "2025-05-02",
+   "bioconda": {
+    "version": "2.9.6",
+    "date": "2025-05-06"
+   },
+   "version": "2.9.6",
+   "date": "2025-05-02",
+   "source": "github release"
+  },
+  "myloasm": {
+   "github": {
+    "version": "v0.7.0",
+    "title": "v0.7.0",
+    "date": "2026-09-09",
+    "href": "https://github.com/bluenote-1577/myloasm/releases/tag/v0.7.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "0.7.0",
+    "date": "2026-09-09"
+   },
+   "version": "0.7.0",
+   "date": "2026-09-09",
+   "source": "github release"
+  },
+  "metamdbg": {
+   "github": {
+    "version": "metaMDBG-1.4",
+    "title": "metaMDBG-1.4",
+    "date": "2026-05-05",
+    "href": "https://github.com/GaetanBenoitDev/metaMDBG/releases/tag/metaMDBG-1.4",
+    "kind": "release"
+   },
+   "last_commit": "2026-05-09",
+   "bioconda": {
+    "version": "1.4",
+    "date": "2026-05-05"
+   },
+   "version": "1.4",
+   "date": "2026-05-05",
+   "source": "github release"
+  },
+  "hifiasm": {
+   "github": {
+    "version": "0.25.0",
+    "title": "Hifiasm-0.25.0-r726",
+    "date": "2025-03-18",
+    "href": "https://github.com/chhylp123/hifiasm/releases/tag/0.25.0",
+    "kind": "release"
+   },
+   "last_commit": "2025-03-18",
+   "bioconda": {
+    "version": "0.25.0",
+    "date": "2025-03-18"
+   },
+   "version": "0.25.0",
+   "date": "2025-03-18",
+   "source": "github release"
+  },
+  "hifiasm_meta": {
+   "github": {
+    "version": "hamtv0.3.5",
+    "title": "hifiasm-meta v0.3.5 (r81)",
+    "date": "2025-11-24",
+    "href": "https://github.com/xfengnefx/hifiasm-meta/releases/tag/hamtv0.3.5",
+    "kind": "release"
+   },
+   "last_commit": "2025-11-24",
+   "bioconda": {
+    "version": "hamtv0.3.1",
+    "date": "2023-01-30"
+   },
+   "version": "0.3.5",
+   "date": "2025-11-24",
+   "source": "github release"
+  },
+  "autocycler": {
+   "github": {
+    "version": "v0.8.0",
+    "title": "Autocycler v0.8.0",
+    "date": "2026-10-02",
+    "href": "https://github.com/rrwick/Autocycler/releases/tag/v0.8.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "0.8.0",
+    "date": "2026-10-02"
+   },
+   "version": "0.8.0",
+   "date": "2026-10-02",
+   "source": "github release"
+  },
+  "canu": {
+   "github": {
+    "version": "v2.3",
+    "title": "Canu v2.3",
+    "date": "2025-04-09",
+    "href": "https://github.com/marbl/canu/releases/tag/v2.3",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-28",
+   "bioconda": {
+    "version": "2.3",
+    "date": "2024-12-17"
+   },
+   "version": "2.3",
+   "date": "2025-04-09",
+   "source": "github release"
+  },
+  "raven": {
+   "github": {
+    "version": "1.8.3",
+    "title": "raven 1.8.3",
+    "date": "2023-09-10",
+    "href": "https://github.com/lbcb-sci/raven/releases/tag/1.8.3",
+    "kind": "release"
+   },
+   "last_commit": "2023-11-15",
+   "bioconda": {
+    "version": "1.8.3",
+    "date": "2023-09-10"
+   },
+   "version": "1.8.3",
+   "date": "2023-09-10",
+   "source": "github release"
+  },
+  "megahit": {
+   "github": {
+    "version": "v1.2.9",
+    "title": "v1.2.9",
+    "date": "2019-10-15",
+    "href": "https://github.com/voutcn/megahit/releases/tag/v1.2.9",
+    "kind": "release"
+   },
+   "last_commit": "2025-10-28",
+   "bioconda": {
+    "version": "1.2.9",
+    "date": "2019-10-15"
+   },
+   "version": "1.2.9",
+   "date": "2019-10-15",
+   "source": "github release"
+  },
+  "spades": {
+   "github": {
+    "version": "v4.3.0",
+    "title": "SPAdes v4.3.0",
+    "date": "2026-06-15",
+    "href": "https://github.com/ablab/spades/releases/tag/v4.3.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-22",
+   "bioconda": {
+    "version": "4.3.0",
+    "date": "2026-06-15"
+   },
+   "version": "4.3.0",
+   "date": "2026-06-15",
+   "source": "github release"
+  },
+  "unicycler": {
+   "github": {
+    "version": "v0.5.1",
+    "title": "Unicycler v0.5.1",
+    "date": "2024-07-25",
+    "href": "https://github.com/rrwick/Unicycler/releases/tag/v0.5.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-07-29",
+   "bioconda": {
+    "version": "0.5.1",
+    "date": "2024-07-25"
+   },
+   "version": "0.5.1",
+   "date": "2024-07-25",
+   "source": "github release"
+  },
+  "hybracter": {
+   "github": {
+    "version": "v0.14.1",
+    "title": "v0.14.1",
+    "date": "2026-11-03",
+    "href": "https://github.com/gbouras13/hybracter/releases/tag/v0.14.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-03",
+   "bioconda": {
+    "version": "0.14.1",
+    "date": "2026-11-03"
+   },
+   "version": "0.14.1",
+   "date": "2026-11-03",
+   "source": "github release"
+  },
+  "plassembler": {
+   "github": {
+    "version": "v1.9.0",
+    "title": "v1.9.0 - lrcorrect and removal of canu as a dependency",
+    "date": "2026-10-27",
+    "href": "https://github.com/gbouras13/plassembler/releases/tag/v1.9.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-27",
+   "bioconda": {
+    "version": "1.9.0",
+    "date": "2026-10-27"
+   },
+   "version": "1.9.0",
+   "date": "2026-10-27",
+   "source": "github release"
+  },
+  "dnaapler": {
+   "github": {
+    "version": "v1.4.0",
+    "title": "v1.4.0",
+    "date": "2026-06-30",
+    "href": "https://github.com/gbouras13/dnaapler/releases/tag/v1.4.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-06-30",
+   "bioconda": {
+    "version": "1.4.0",
+    "date": "2026-07-01"
+   },
+   "version": "1.4.0",
+   "date": "2026-06-30",
+   "source": "github release"
+  },
+  "medaka": {
+   "github": {
+    "version": "v2.2.2",
+    "title": "v2.2.2",
+    "date": "2026-05-20",
+    "href": "https://github.com/nanoporetech/medaka/releases/tag/v2.2.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-05-20",
+   "bioconda": {
+    "version": "2.2.2",
+    "date": "2026-05-21"
+   },
+   "version": "2.2.2",
+   "date": "2026-05-20",
+   "source": "github release"
+  },
+  "dorado_polish": {
+   "github": {
+    "version": "v2.1.2",
+    "title": "v2.1.2",
+    "date": "2026-08-26",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-26",
+   "version": "2.1.2",
+   "date": "2026-08-26",
+   "source": "github release"
+  },
+  "racon": {
+   "github": {
+    "version": "1.5.0",
+    "title": "Racon v1.5.0",
+    "date": "2021-12-19",
+    "href": "https://github.com/lbcb-sci/racon/releases/tag/1.5.0",
+    "kind": "release"
+   },
+   "last_commit": "2021-12-19",
+   "bioconda": {
+    "version": "1.5.0",
+    "date": "2022-03-14"
+   },
+   "version": "1.5.0",
+   "date": "2021-12-19",
+   "source": "github release"
+  },
+  "polypolish": {
+   "github": {
+    "version": "v0.7.1",
+    "title": "Polypolish v0.7.1",
+    "date": "2026-07-28",
+    "href": "https://github.com/rrwick/Polypolish/releases/tag/v0.7.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-07-28",
+   "bioconda": {
+    "version": "0.7.1",
+    "date": "2026-07-29"
+   },
+   "version": "0.7.1",
+   "date": "2026-07-28",
+   "source": "github release"
+  },
+  "pypolca": {
+   "github": {
+    "version": "v0.5.0",
+    "title": "0.5.0 (2026-09-09)",
+    "date": "2026-09-09",
+    "href": "https://github.com/gbouras13/pypolca/releases/tag/v0.5.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-09-09",
+   "bioconda": {
+    "version": "0.5.0",
+    "date": "2026-09-11"
+   },
+   "version": "0.5.0",
+   "date": "2026-09-09",
+   "source": "github release"
+  },
+  "semibin2": {
+   "github": {
+    "version": "v2.6.0",
+    "title": "Version 2.6.0",
+    "date": "2026-10-13",
+    "href": "https://github.com/BigDataBiology/SemiBin/releases/tag/v2.6.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "2.6.0",
+    "date": "2026-10-13"
+   },
+   "version": "2.6.0",
+   "date": "2026-10-13",
+   "source": "github release"
+  },
+  "comebin": {
+   "github": {
+    "version": "1.1.0",
+    "title": "COMEBin v1.1.0",
+    "date": "2026-08-16",
+    "href": "https://github.com/ziyewang/COMEBin/releases/tag/1.1.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-23",
+   "bioconda": {
+    "version": "1.1.0",
+    "date": "2026-08-19"
+   },
+   "version": "1.1.0",
+   "date": "2026-08-16",
+   "source": "github release"
+  },
+  "vamb": {
+   "github": {
+    "version": "v5.0.4",
+    "title": "v5.0.4",
+    "date": "2025-04-30",
+    "href": "https://github.com/RasmussenLab/vamb/releases/tag/v5.0.4",
+    "kind": "release"
+   },
+   "last_commit": "2026-04-27",
+   "bioconda": {
+    "version": "5.0.4",
+    "date": "2025-04-29"
+   },
+   "version": "5.0.4",
+   "date": "2025-04-30",
+   "source": "github release"
+  },
+  "metabat2": {
+   "bioconda": {
+    "version": "2.18_23_gc869c52",
+    "date": "2026-05-06"
+   },
+   "version": "2.18_23_gc869c52",
+   "date": "2026-05-06",
+   "source": "bioconda"
+  },
+  "graphmb": {
+   "github": {
+    "version": "v0.2.5",
+    "title": "v0.2.5",
+    "date": "2023-07-18",
+    "href": "https://github.com/MicrobialDarkMatter/GraphMB/releases/tag/v0.2.5",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-07",
+   "bioconda": {
+    "version": "0.2.6",
+    "date": "2026-08-08"
+   },
+   "version": "0.2.6",
+   "date": "2026-08-08",
+   "source": "bioconda"
+  },
+  "binette": {
+   "github": {
+    "version": "v1.2.1",
+    "title": "Binette v1.2.1",
+    "date": "2025-11-07",
+    "href": "https://github.com/genotoul-bioinfo/Binette/releases/tag/v1.2.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-09-28",
+   "bioconda": {
+    "version": "1.2.1",
+    "date": "2025-11-10"
+   },
+   "version": "1.2.1",
+   "date": "2025-11-07",
+   "source": "github release"
+  },
+  "dastool": {
+   "github": {
+    "version": "1.1.7-b.1",
+    "title": "DAS Tool 1.1.7-b.1",
+    "date": "2023-12-18",
+    "href": "https://github.com/cmks/DAS_Tool/releases/tag/1.1.7-b.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-09",
+   "bioconda": {
+    "version": "1.1.7",
+    "date": "2024-01-09"
+   },
+   "version": "1.1.7-b.1",
+   "date": "2023-12-18",
+   "source": "github release"
+  },
+  "checkm2": {
+   "github": {
+    "version": "1.1.0",
+    "title": "1.1.0",
+    "date": "2025-02-20",
+    "href": "https://github.com/chklovski/CheckM2/releases/tag/1.1.0",
+    "kind": "release"
+   },
+   "last_commit": "2025-03-20",
+   "bioconda": {
+    "version": "1.1.0",
+    "date": "2025-02-20"
+   },
+   "version": "1.1.0",
+   "date": "2025-02-20",
+   "source": "github release"
+  },
+  "checkm": {
+   "github": {
+    "version": "v1.3.0",
+    "title": "v1.3.0",
+    "date": "2026-11-10",
+    "href": "https://github.com/Ecogenomics/CheckM/releases/tag/v1.3.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "1.3.0",
+    "date": "2026-11-10"
+   },
+   "version": "1.3.0",
+   "date": "2026-11-10",
+   "source": "github release"
+  },
+  "gunc": {
+   "github": {
+    "version": "v1.1.1",
+    "title": "v1.1.1",
+    "date": "2026-05-11",
+    "href": "https://github.com/grp-bork/gunc/releases/tag/v1.1.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-05-11",
+   "bioconda": {
+    "version": "1.1.1",
+    "date": "2026-05-11"
+   },
+   "version": "1.1.1",
+   "date": "2026-05-11",
+   "source": "github release"
+  },
+  "drep": {
+   "github": {
+    "version": "v4.0.3",
+    "title": "dRep v4.0.3",
+    "date": "2026-10-09",
+    "href": "https://github.com/MrOlm/drep/releases/tag/v4.0.3",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-09",
+   "bioconda": {
+    "version": "4.0.3",
+    "date": "2026-10-12"
+   },
+   "version": "4.0.3",
+   "date": "2026-10-09",
+   "source": "github release"
+  },
+  "galah": {
+   "github": {
+    "version": "v0.6.4",
+    "title": "v0.6.4",
+    "date": "2026-11-10",
+    "href": "https://github.com/wwood/galah/releases/tag/v0.6.4",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "0.6.4",
+    "date": "2026-11-10"
+   },
+   "version": "0.6.4",
+   "date": "2026-11-10",
+   "source": "github release"
+  },
+  "quast": {
+   "github": {
+    "version": "quast_5.3.0",
+    "title": "QUAST 5.3.0",
+    "date": "2024-11-10",
+    "href": "https://github.com/ablab/quast/releases/tag/quast_5.3.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-06-10",
+   "bioconda": {
+    "version": "5.3.0",
+    "date": "2024-11-10"
+   },
+   "version": "5.3.0",
+   "date": "2024-11-10",
+   "source": "github release"
+  },
+  "busco": {
+   "bioconda": {
+    "version": "6.1.0",
+    "date": "2026-06-05"
+   },
+   "version": "6.1.0",
+   "date": "2026-06-05",
+   "source": "bioconda"
+  },
+  "checkv": {
+   "bioconda": {
+    "version": "1.1.1",
+    "date": "2026-05-23"
+   },
+   "version": "1.1.1",
+   "date": "2026-05-23",
+   "source": "bioconda"
+  },
+  "gtdbtk": {
+   "github": {
+    "version": "2.8.0",
+    "title": "2.8.0",
+    "date": "2026-10-13",
+    "href": "https://github.com/Ecogenomics/GTDBTk/releases/tag/2.8.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-13",
+   "bioconda": {
+    "version": "2.8.0",
+    "date": "2026-10-13"
+   },
+   "version": "2.8.0",
+   "date": "2026-10-13",
+   "source": "github release"
+  },
+  "cat_bat": {
+   "github": {
+    "version": "v6.0.1",
+    "title": "CAT pack v6.0.1",
+    "date": "2024-03-12",
+    "href": "https://github.com/MGXlab/CAT_pack/releases/tag/v6.0.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-09",
+   "bioconda": {
+    "version": "6.0.1",
+    "date": "2024-11-06"
+   },
+   "version": "6.0.1",
+   "date": "2024-03-12",
+   "source": "github release"
+  },
+  "bakta": {
+   "github": {
+    "version": "v1.12.2",
+    "title": "v1.12.2",
+    "date": "2026-10-11",
+    "href": "https://github.com/oschwengers/bakta/releases/tag/v1.12.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-11",
+   "bioconda": {
+    "version": "1.12.2",
+    "date": "2026-10-11"
+   },
+   "version": "1.12.2",
+   "date": "2026-10-11",
+   "source": "github release"
+  },
+  "prokka": {
+   "github": {
+    "version": "v1.15.6",
+    "title": "Heading into the sunset",
+    "date": "2025-12-15",
+    "href": "https://github.com/tseemann/prokka/releases/tag/v1.15.6",
+    "kind": "release"
+   },
+   "last_commit": "2026-01-06",
+   "bioconda": {
+    "version": "1.15.6",
+    "date": "2025-12-14"
+   },
+   "version": "1.15.6",
+   "date": "2025-12-15",
+   "source": "github release"
+  },
+  "pyrodigal": {
+   "github": {
+    "version": "v3.7.1",
+    "title": "v3.7.1",
+    "date": "2026-03-08",
+    "href": "https://github.com/althonos/pyrodigal/releases/tag/v3.7.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-03-17",
+   "bioconda": {
+    "version": "3.7.1",
+    "date": "2026-03-11"
+   },
+   "version": "3.7.1",
+   "date": "2026-03-08",
+   "source": "github release"
+  },
+  "eggnog": {
+   "github": {
+    "version": "v2.1.15",
+    "title": "v2.1.15",
+    "date": "2026-05-22",
+    "href": "https://github.com/eggnogdb/eggnog-mapper/releases/tag/v2.1.15",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-13",
+   "bioconda": {
+    "version": "2.1.15",
+    "date": "2026-07-02"
+   },
+   "version": "2.1.15",
+   "date": "2026-05-22",
+   "source": "github release"
+  },
+  "dram": {
+   "last_commit": "2026-11-09",
+   "bioconda": {
+    "version": "1.5.0",
+    "date": "2024-03-25"
+   },
+   "version": "1.5.0",
+   "date": "2024-03-25",
+   "source": "bioconda"
+  },
+  "antismash": {
+   "github": {
+    "version": "8-0-4",
+    "title": "8.0.4",
+    "date": "2025-09-05",
+    "href": "https://github.com/antismash/antismash/releases/tag/8-0-4",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-06",
+   "bioconda": {
+    "version": "8.0.4",
+    "date": "2025-09-09"
+   },
+   "version": "8.0.4",
+   "date": "2025-09-05",
+   "source": "github release"
+  },
+  "amrfinder": {
+   "github": {
+    "version": "amrfinder_v4.2.7",
+    "title": "AMRFinderPlus v4.2.7",
+    "date": "2026-01-26",
+    "href": "https://github.com/ncbi/amr/releases/tag/amrfinder_v4.2.7",
+    "kind": "release"
+   },
+   "last_commit": "2026-08-10",
+   "bioconda": {
+    "version": "4.2.7",
+    "date": "2026-01-28"
+   },
+   "version": "4.2.7",
+   "date": "2026-01-26",
+   "source": "github release"
+  },
+  "genomad": {
+   "github": {
+    "version": "v1.13.0",
+    "title": "geNomad v1.13.0",
+    "date": "2026-10-14",
+    "href": "https://github.com/apcamargo/genomad/releases/tag/v1.13.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-14",
+   "bioconda": {
+    "version": "1.13.0",
+    "date": "2026-10-17"
+   },
+   "version": "1.13.0",
+   "date": "2026-10-14",
+   "source": "github release"
+  },
+  "diamond": {
+   "github": {
+    "version": "v2.2.8",
+    "title": "DIAMOND v2.2.8",
+    "date": "2026-09-20",
+    "href": "https://github.com/bbuchfink/diamond/releases/tag/v2.2.8",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "2.2.8",
+    "date": "2026-09-20"
+   },
+   "version": "2.2.8",
+   "date": "2026-09-20",
+   "source": "github release"
+  },
+  "mmseqs2": {
+   "github": {
+    "version": "18-8cc5c",
+    "title": "MMseqs2 Release 18-8cc5c",
+    "date": "2025-07-28",
+    "href": "https://github.com/soedinglab/MMseqs2/releases/tag/18-8cc5c",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "17.b804f",
+    "date": "2025-01-18"
+   },
+   "version": "18-8cc5c",
+   "date": "2025-07-28",
+   "source": "github release"
+  },
+  "kofamscan": {
+   "bioconda": {
+    "version": "1.3.0",
+    "date": "2020-05-17"
+   },
+   "version": "1.3.0",
+   "date": "2020-05-17",
+   "source": "bioconda"
+  },
+  "modkit": {
+   "github": {
+    "version": "v0.6.4",
+    "title": "v0.6.4",
+    "date": "2026-06-12",
+    "href": "https://github.com/nanoporetech/modkit/releases/tag/v0.6.4",
+    "kind": "release"
+   },
+   "last_commit": "2026-06-12",
+   "version": "0.6.4",
+   "date": "2026-06-12",
+   "source": "github release"
+  },
+  "nanomotif": {
+   "github": {
+    "version": "v1.3.0",
+    "title": "Nanomotif 1.3.0",
+    "date": "2026-11-05",
+    "href": "https://github.com/MicrobialDarkMatter/nanomotif/releases/tag/v1.3.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-05",
+   "bioconda": {
+    "version": "1.3.0",
+    "date": "2026-11-07"
+   },
+   "version": "1.3.0",
+   "date": "2026-11-05",
+   "source": "github release"
+  },
+  "microbemod": {
+   "github": {
+    "version": "v1.5.1",
+    "title": "MicrobeMod 1.5.1",
+    "date": "2026-07-09",
+    "href": "https://github.com/cultivarium/MicrobeMod/releases/tag/v1.5.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-07-09",
+   "version": "1.5.1",
+   "date": "2026-07-09",
+   "source": "github release"
+  },
+  "methylartist": {
+   "github": {
+    "version": "1.6.0",
+    "title": "1.6.0",
+    "date": "2026-10-06",
+    "href": "https://github.com/adamewing/methylartist/releases/tag/1.6.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-10",
+   "bioconda": {
+    "version": "1.6.0",
+    "date": "2026-10-09"
+   },
+   "version": "1.6.0",
+   "date": "2026-10-06",
+   "source": "github release"
+  },
+  "methbat": {
+   "github": {
+    "version": "v1.2.0",
+    "title": "MethBat v1.2.0",
+    "date": "2026-11-02",
+    "href": "https://github.com/PacificBiosciences/MethBat/releases/tag/v1.2.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-02",
+   "version": "1.2.0",
+   "date": "2026-11-02",
+   "source": "github release"
+  },
+  "pbcpg": {
+   "github": {
+    "version": "v3.0.0",
+    "title": "pb-CpG-tools v3.0.0",
+    "date": "2025-01-28",
+    "href": "https://github.com/PacificBiosciences/pb-CpG-tools/releases/tag/v3.0.0",
+    "kind": "release"
+   },
+   "last_commit": "2025-07-09",
+   "version": "3.0.0",
+   "date": "2025-01-28",
+   "source": "github release"
+  },
+  "clair3": {
+   "github": {
+    "version": "v2.0.5",
+    "title": "v2.0.5",
+    "date": "2026-11-06",
+    "href": "https://github.com/HKU-BAL/Clair3/releases/tag/v2.0.5",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-06",
+   "bioconda": {
+    "version": "2.0.5",
+    "date": "2026-11-09"
+   },
+   "version": "2.0.5",
+   "date": "2026-11-06",
+   "source": "github release"
+  },
+  "sniffles2": {
+   "github": {
+    "version": "v2.8.1",
+    "title": "v2.8.1",
+    "date": "2026-09-10",
+    "href": "https://github.com/fritzsedlazeck/Sniffles/releases/tag/v2.8.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-18",
+   "bioconda": {
+    "version": "2.8.1",
+    "date": "2026-09-14"
+   },
+   "version": "2.8.1",
+   "date": "2026-09-10",
+   "source": "github release"
+  },
+  "instrain": {
+   "github": {
+    "version": "v1.12.0",
+    "title": "inStrain v1.12.0",
+    "date": "2026-10-20",
+    "href": "https://github.com/MrOlm/inStrain/releases/tag/v1.12.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-20",
+   "bioconda": {
+    "version": "1.12.0",
+    "date": "2026-10-22"
+   },
+   "version": "1.12.0",
+   "date": "2026-10-20",
+   "source": "github release"
+  },
+  "strainy": {
+   "github": {
+    "version": "1.2",
+    "title": "Strainy 1.2",
+    "date": "2024-10-21",
+    "href": "https://github.com/katerinakazantseva/strainy/releases/tag/1.2",
+    "kind": "release"
+   },
+   "last_commit": "2024-11-01",
+   "bioconda": {
+    "version": "1.2",
+    "date": "2024-10-21"
+   },
+   "version": "1.2",
+   "date": "2024-10-21",
+   "source": "github release"
+  },
+  "floria": {
+   "github": {
+    "version": "v0.0.2",
+    "title": "v0.0.2",
+    "date": "2025-04-10",
+    "href": "https://github.com/bluenote-1577/floria/releases/tag/v0.0.2",
+    "kind": "release"
+   },
+   "last_commit": "2025-04-10",
+   "bioconda": {
+    "version": "0.0.2",
+    "date": "2025-04-14"
+   },
+   "version": "0.0.2",
+   "date": "2025-04-10",
+   "source": "github release"
+  },
+  "coverm": {
+   "github": {
+    "version": "v0.8.0",
+    "title": "Version 0.8.0",
+    "date": "2026-07-08",
+    "href": "https://github.com/wwood/CoverM/releases/tag/v0.8.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-04",
+   "bioconda": {
+    "version": "0.8.0",
+    "date": "2026-07-08"
+   },
+   "version": "0.8.0",
+   "date": "2026-07-08",
+   "source": "github release"
+  },
+  "mosdepth": {
+   "github": {
+    "version": "v0.3.15",
+    "title": "memory and tag exclusion",
+    "date": "2026-10-29",
+    "href": "https://github.com/brentp/mosdepth/releases/tag/v0.3.15",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-29",
+   "bioconda": {
+    "version": "0.3.14",
+    "date": "2026-04-25"
+   },
+   "version": "0.3.15",
+   "date": "2026-10-29",
+   "source": "github release"
+  },
+  "sourmash": {
+   "github": {
+    "version": "v4.9.4",
+    "title": "v4.9.4",
+    "date": "2025-08-07",
+    "href": "https://github.com/sourmash-bio/sourmash/releases/tag/v4.9.4",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-10",
+   "bioconda": {
+    "version": "4.9.4",
+    "date": "2025-08-07"
+   },
+   "version": "4.9.4",
+   "date": "2025-08-07",
+   "source": "github release"
+  },
+  "skani": {
+   "github": {
+    "version": "v0.4.0",
+    "title": "v0.4.0",
+    "date": "2026-10-11",
+    "href": "https://github.com/bluenote-1577/skani/releases/tag/v0.4.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-14",
+   "bioconda": {
+    "version": "0.4.0",
+    "date": "2026-10-11"
+   },
+   "version": "0.4.0",
+   "date": "2026-10-11",
+   "source": "github release"
+  },
+  "mash": {
+   "github": {
+    "version": "v2.3",
+    "title": "Mash v2.3",
+    "date": "2021-02-26",
+    "href": "https://github.com/marbl/Mash/releases/tag/v2.3",
+    "kind": "release"
+   },
+   "last_commit": "2025-09-19",
+   "bioconda": {
+    "version": "2.3",
+    "date": "2021-02-27"
+   },
+   "version": "2.3",
+   "date": "2021-02-26",
+   "source": "github release"
+  },
+  "nfcore_mag": {
+   "github": {
+    "version": "5.5.0",
+    "title": "mag 5.5.0 - Purple Penguin",
+    "date": "2026-08-01",
+    "href": "https://github.com/nf-core/mag/releases/tag/5.5.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-08",
+   "version": "5.5.0",
+   "date": "2026-08-01",
+   "source": "github release"
+  },
+  "nfcore_taxprofiler": {
+   "github": {
+    "version": "2.0.1",
+    "title": "v2.0.1 - Crazy Corgi Patch",
+    "date": "2026-06-15",
+    "href": "https://github.com/nf-core/taxprofiler/releases/tag/2.0.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-10-08",
+   "version": "2.0.1",
+   "date": "2026-06-15",
+   "source": "github release"
+  },
+  "wf_metagenomics": {
+   "github": {
+    "version": "v2.14.2",
+    "title": "v2.14.2",
+    "date": "2026-01-22",
+    "href": "https://github.com/epi2me-labs/wf-metagenomics/releases/tag/v2.14.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-01-22",
+   "version": "2.14.2",
+   "date": "2026-01-22",
+   "source": "github release"
+  },
+  "wf_bacterial": {
+   "github": {
+    "version": "v2.0.2",
+    "title": "v2.0.2",
+    "date": "2026-03-03",
+    "href": "https://github.com/epi2me-labs/wf-bacterial-genomes/releases/tag/v2.0.2",
+    "kind": "release"
+   },
+   "last_commit": "2026-03-02",
+   "version": "2.0.2",
+   "date": "2026-03-03",
+   "source": "github release"
+  },
+  "mmlong2": {
+   "github": {
+    "version": "v1.2.1",
+    "title": "mmlong2: v1.2.1",
+    "date": "2025-10-24",
+    "href": "https://github.com/Serka-M/mmlong2/releases/tag/v1.2.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-09-01",
+   "version": "1.2.1",
+   "date": "2025-10-24",
+   "source": "github release"
+  },
+  "aviary": {
+   "github": {
+    "version": "v0.14.0",
+    "title": "v0.14.0",
+    "date": "2026-10-29",
+    "href": "https://github.com/rhysnewell/aviary/releases/tag/v0.14.0",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-09",
+   "bioconda": {
+    "version": "0.14.0",
+    "date": "2026-11-01"
+   },
+   "version": "0.14.0",
+   "date": "2026-10-29",
+   "source": "github release"
+  },
+  "snakemake": {
+   "github": {
+    "version": "v9.27.1",
+    "title": "v9.27.1",
+    "date": "2026-10-21",
+    "href": "https://github.com/snakemake/snakemake/releases/tag/v9.27.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "9.27.1",
+    "date": "2026-10-21"
+   },
+   "version": "9.27.1",
+   "date": "2026-10-21",
+   "source": "github release"
+  },
+  "nextflow": {
+   "github": {
+    "version": "v26.10.5",
+    "title": "Version 26.10.5",
+    "date": "2026-11-02",
+    "href": "https://github.com/nextflow-io/nextflow/releases/tag/v26.10.5",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "26.10.5",
+    "date": "2026-11-05"
+   },
+   "version": "26.10.5",
+   "date": "2026-11-02",
+   "source": "github release"
+  },
+  "bandageng": {
+   "github": {
+    "version": "v2026.11.1",
+    "title": "Release v2026.11.1",
+    "date": "2026-11-01",
+    "href": "https://github.com/asl/BandageNG/releases/tag/v2026.11.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-01",
+   "version": "2026.11.1",
+   "date": "2026-11-01",
+   "source": "github release"
+  },
+  "igv": {
+   "github": {
+    "version": "v2.19.8",
+    "title": "v2.19.8",
+    "date": "2026-06-05",
+    "href": "https://github.com/igvteam/igv/releases/tag/v2.19.8",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-06",
+   "version": "2.19.8",
+   "date": "2026-06-05",
+   "source": "github release"
+  },
+  "anvio": {
+   "github": {
+    "version": "v9",
+    "title": "anvi'o v9, \"eunice\"",
+    "date": "2026-04-01",
+    "href": "https://github.com/merenlab/anvio/releases/tag/v9",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-06",
+   "version": "9",
+   "date": "2026-04-01",
+   "source": "github release"
+  }
+ }
+}

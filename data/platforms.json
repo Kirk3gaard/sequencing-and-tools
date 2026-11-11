@@ -1,0 +1,86 @@
+[
+ {
+  "id": "ont",
+  "name": "Oxford Nanopore",
+  "group": "long",
+  "chem": "R10.4.1 nanopore, 5 kHz",
+  "devices": "Flongle, MinION, GridION, PromethION (P2 Solo, P24, P48)",
+  "reads": "Tens of kb typical; ultra-long >100 kb possible",
+  "accuracy": "~Q20+ simplex with SUP models; higher for duplex",
+  "raw": "POD5 → BAM/FASTQ via Dorado",
+  "mods": "5mC, 5hmC, 6mA, 4mC natively from signal",
+  "role": "Our main platform: long-read MAGs, circular genomes, plasmids, methylation-aware binning. Watch for untrimmed adapters, barcodes and chimeras left after basecalling."
+ },
+ {
+  "id": "hifi",
+  "name": "PacBio HiFi",
+  "group": "long",
+  "chem": "SMRT circular consensus",
+  "devices": "Revio, Vega",
+  "reads": "~15–20 kb HiFi reads",
+  "accuracy": ">Q30 consensus",
+  "raw": "HiFi BAM",
+  "mods": "5mC; 6mA and 5hmC now reported on-instrument",
+  "role": "High-accuracy long-read metagenomes and full-length amplicons (Kinnex 16S). Residual adapters and concatemers need filtering."
+ },
+ {
+  "id": "illumina",
+  "name": "Illumina",
+  "group": "sr",
+  "chem": "Sequencing by synthesis",
+  "devices": "NovaSeq X, NextSeq 2000, MiSeq i100",
+  "reads": "2×150 bp typical",
+  "accuracy": ">Q30",
+  "raw": "BCL → FASTQ (BCL Convert/DRAGEN)",
+  "mods": "Via bisulfite/enzymatic conversion",
+  "role": "Deep, cheap coverage for profiling, strain variation and polishing."
+ },
+ {
+  "id": "element",
+  "name": "Element AVITI",
+  "group": "sr",
+  "chem": "Avidity sequencing",
+  "devices": "AVITI, AVITI24",
+  "reads": "2×150 to 2×300 bp",
+  "accuracy": "Very high (Q40+ reported)",
+  "raw": "bases2fastq",
+  "mods": "Via conversion chemistries",
+  "role": "Short-read alternative with high base quality; same downstream tools."
+ },
+ {
+  "id": "mgi",
+  "name": "MGI / Complete Genomics",
+  "group": "sr",
+  "chem": "DNA nanoball (DNBSEQ); CycloneSEQ nanopore",
+  "devices": "DNBSEQ-T7, G400; CycloneSEQ",
+  "reads": "2×150 bp (DNBSEQ)",
+  "accuracy": ">Q30 (DNBSEQ)",
+  "raw": "FASTQ",
+  "mods": "—",
+  "role": "Low-cost short reads. CycloneSEQ availability in Europe is constrained by ONT patent litigation."
+ },
+ {
+  "id": "ultima",
+  "name": "Ultima Genomics",
+  "group": "sr",
+  "chem": "Flow-based SBS on open wafer",
+  "devices": "UG 100",
+  "reads": "~300 bp single-end",
+  "accuracy": "High per-base, homopolymer indels are the main error",
+  "raw": "CRAM/FASTQ",
+  "mods": "—",
+  "role": "Very low cost per Gb for deep profiling; check homopolymer handling."
+ },
+ {
+  "id": "sbx",
+  "name": "Roche SBX",
+  "group": "sr",
+  "chem": "Sequencing by expansion (Xpandomers read on a CMOS nanopore array)",
+  "devices": "Roche SBX system",
+  "reads": "Short-to-medium reads",
+  "accuracy": "Simplex and duplex modes",
+  "raw": "FASTQ/BAM",
+  "mods": "—",
+  "role": "New 2026 high-throughput entrant; tool compatibility still settling."
+ }
+]
