@@ -347,6 +347,22 @@
    ]
   },
   {
+   "id": "barbell",
+   "name": "Barbell",
+   "step": "trim",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "rickbeeloo/barbell",
+   "bioconda": "barbell",
+   "url": "https://github.com/rickbeeloo/barbell",
+   "desc": "Fast, pattern-aware nanopore demultiplexer that classifies barcode/adapter layouts per read.",
+   "note": "Flags concatenated and mis-ligated barcode reads that standard demux keeps; compare against Dorado demux.",
+   "flags": [
+    "artefact"
+   ]
+  },
+  {
    "id": "lima",
    "name": "lima",
    "step": "trim",
@@ -502,6 +518,22 @@
    "url": "https://github.com/wdecoster/chopper",
    "desc": "Rust filter/trimmer for long reads by quality, length and contaminants.",
    "note": "Replaces NanoFilt.",
+   "flags": []
+  },
+  {
+   "id": "deacon",
+   "name": "deacon",
+   "step": "qc",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "bede/deacon",
+   "bioconda": "deacon",
+   "url": "https://github.com/bede/deacon",
+   "desc": "Fast alignment-free minimizer filter for host/contaminant depletion of reads.",
+   "note": "Index choice decides what is removed; keep the depleted fraction for audit.",
    "flags": []
   },
   {
@@ -1191,6 +1223,22 @@
    "url": "https://github.com/BigDataBiology/SemiBin",
    "desc": "Self-supervised binning with long-read mode.",
    "note": "",
+   "flags": []
+  },
+  {
+   "id": "metacat",
+   "name": "MetaCAT",
+   "step": "bin",
+   "platforms": [
+    "ont",
+    "hifi",
+    "sr"
+   ],
+   "repo": "liu-congcong/MetaCAT",
+   "bioconda": "metacat",
+   "url": "https://github.com/liu-congcong/MetaCAT",
+   "desc": "Metagenome binning by coverage and composition clustering.",
+   "note": "Default binner in aviary 0.14.",
    "flags": []
   },
   {

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-13",
  "tools": {
   "minknow": {},
   "pod5": {
@@ -186,6 +186,23 @@
    "date": "2024-07-25",
    "source": "github release"
   },
+  "barbell": {
+   "github": {
+    "version": "v0.3.3",
+    "title": "v0.3.3",
+    "date": "2026-05-22",
+    "href": "https://github.com/rickbeeloo/barbell/releases/tag/v0.3.3",
+    "kind": "release"
+   },
+   "last_commit": "2026-09-05",
+   "bioconda": {
+    "version": "0.3.3",
+    "date": "2026-05-25"
+   },
+   "version": "0.3.3",
+   "date": "2026-05-22",
+   "source": "github release"
+  },
   "lima": {
    "bioconda": {
     "version": "26.2.1",
@@ -330,6 +347,23 @@
    },
    "version": "0.15.0",
    "date": "2026-10-29",
+   "source": "github release"
+  },
+  "deacon": {
+   "github": {
+    "version": "0.19.1",
+    "title": "0.19.1",
+    "date": "2026-10-26",
+    "href": "https://github.com/bede/deacon/releases/tag/0.19.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-11",
+   "bioconda": {
+    "version": "0.19.1",
+    "date": "2026-11-02"
+   },
+   "version": "0.19.1",
+   "date": "2026-10-26",
    "source": "github release"
   },
   "filtlong": {
@@ -587,7 +621,7 @@
     "href": "https://github.com/samtools/samtools/releases/tag/1.25",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-12",
    "bioconda": {
     "version": "1.25",
     "date": "2026-10-27"
@@ -853,19 +887,19 @@
   },
   "autocycler": {
    "github": {
-    "version": "v0.8.0",
-    "title": "Autocycler v0.8.0",
-    "date": "2026-10-02",
-    "href": "https://github.com/rrwick/Autocycler/releases/tag/v0.8.0",
+    "version": "v0.8.1",
+    "title": "Autocycler v0.8.1",
+    "date": "2026-11-12",
+    "href": "https://github.com/rrwick/Autocycler/releases/tag/v0.8.1",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-12",
    "bioconda": {
-    "version": "0.8.0",
-    "date": "2026-10-02"
+    "version": "0.8.1",
+    "date": "2026-11-13"
    },
-   "version": "0.8.0",
-   "date": "2026-10-02",
+   "version": "0.8.1",
+   "date": "2026-11-12",
    "source": "github release"
   },
   "canu": {
@@ -1100,6 +1134,23 @@
    },
    "version": "2.6.0",
    "date": "2026-10-13",
+   "source": "github release"
+  },
+  "metacat": {
+   "github": {
+    "version": "MetaCAT-1.0.7",
+    "title": "MetaCAT-1.0.7",
+    "date": "2026-09-22",
+    "href": "https://github.com/liu-congcong/MetaCAT/releases/tag/MetaCAT-1.0.7",
+    "kind": "release"
+   },
+   "last_commit": "2026-09-22",
+   "bioconda": {
+    "version": "1.0.6",
+    "date": "2026-09-09"
+   },
+   "version": "1.0.7",
+   "date": "2026-09-22",
    "source": "github release"
   },
   "comebin": {
@@ -1487,7 +1538,7 @@
     "href": "https://github.com/bbuchfink/diamond/releases/tag/v2.2.8",
     "kind": "release"
    },
-   "last_commit": "2026-11-10",
+   "last_commit": "2026-11-12",
    "bioconda": {
     "version": "2.2.8",
     "date": "2026-09-20"
@@ -1556,13 +1607,13 @@
    "github": {
     "version": "v1.5.1",
     "title": "MicrobeMod 1.5.1",
-    "date": "2026-07-09",
+    "date": "2026-11-12",
     "href": "https://github.com/cultivarium/MicrobeMod/releases/tag/v1.5.1",
     "kind": "release"
    },
-   "last_commit": "2026-07-09",
+   "last_commit": "2026-11-12",
    "version": "1.5.1",
-   "date": "2026-07-09",
+   "date": "2026-11-12",
    "source": "github release"
   },
   "methylartist": {
@@ -1868,7 +1919,7 @@
     "href": "https://github.com/snakemake/snakemake/releases/tag/v9.27.1",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-12",
    "bioconda": {
     "version": "9.27.1",
     "date": "2026-10-21"
@@ -1879,19 +1930,19 @@
   },
   "nextflow": {
    "github": {
-    "version": "v26.10.5",
-    "title": "Version 26.10.5",
-    "date": "2026-11-02",
-    "href": "https://github.com/nextflow-io/nextflow/releases/tag/v26.10.5",
+    "version": "v26.10.6",
+    "title": "Version 26.10.6",
+    "date": "2026-11-12",
+    "href": "https://github.com/nextflow-io/nextflow/releases/tag/v26.10.6",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-13",
    "bioconda": {
     "version": "26.10.5",
     "date": "2026-11-05"
    },
-   "version": "26.10.5",
-   "date": "2026-11-02",
+   "version": "26.10.6",
+   "date": "2026-11-12",
    "source": "github release"
   },
   "bandageng": {
@@ -1915,7 +1966,7 @@
     "href": "https://github.com/igvteam/igv/releases/tag/v2.19.8",
     "kind": "release"
    },
-   "last_commit": "2026-11-06",
+   "last_commit": "2026-11-12",
    "version": "2.19.8",
    "date": "2026-06-05",
    "source": "github release"
@@ -1928,7 +1979,7 @@
     "href": "https://github.com/merenlab/anvio/releases/tag/v9",
     "kind": "release"
    },
-   "last_commit": "2026-11-06",
+   "last_commit": "2026-11-12",
    "version": "9",
    "date": "2026-04-01",
    "source": "github release"

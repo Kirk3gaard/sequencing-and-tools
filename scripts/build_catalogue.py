@@ -47,6 +47,7 @@ T = [
  ("duplex_tools","duplex-tools","trim",["ont"],"nanoporetech/duplex-tools",None,None,"Finds duplex pairs and splits reads at internal adapters (split_on_adapter).","Removes concatenated/chimeric reads that inflate N50 and cause misassemblies.",["artefact"]),
  ("yacrd","yacrd","trim",["ont","hifi"],"natir/yacrd","yacrd",None,"Detects and removes chimeric and low-coverage regions via all-vs-all overlaps.","Chimera screen before assembly.",["artefact"]),
  ("pychopper","Pychopper","trim",["ont"],"epi2me-labs/pychopper","pychopper",None,"Identifies, orients and trims full-length cDNA reads.","Transcriptomics only.",["artefact"]),
+ ("barbell","Barbell","trim",["ont"],"rickbeeloo/barbell","barbell",None,"Fast, pattern-aware nanopore demultiplexer that classifies barcode/adapter layouts per read.","Flags concatenated and mis-ligated barcode reads that standard demux keeps; compare against Dorado demux.",["artefact"]),
  ("lima","lima","trim",["hifi"],None,"lima","https://lima.how","PacBio barcode demultiplexing and primer removal.","Standard HiFi demultiplexer.",["artefact"]),
  ("skera","skera","trim",["hifi"],None,"pbskera","https://skera.how","Splits Kinnex/MAS-Seq concatenated arrays into segmented reads.","Required for Kinnex 16S and RNA.",["artefact"]),
  ("hifiadapterfilt","HiFiAdapterFilt","trim",["hifi"],"sheinasim/HiFiAdapterFilt","hifiadapterfilt",None,"Removes HiFi reads containing residual adapter sequence.","Residual adapters still occur in HiFi and break assemblies.",["artefact"]),
@@ -58,6 +59,7 @@ T = [
  ("nanocomp","NanoComp","qc",["ont","hifi"],"wdecoster/nanocomp","nanocomp",None,"Compare several long-read datasets side by side.","",[]),
  ("cramino","cramino","qc",["ont","hifi"],"wdecoster/cramino","cramino",None,"Very fast summary stats from BAM/CRAM.","Stats straight from unaligned Dorado BAMs.",[]),
  ("chopper","chopper","qc",["ont","hifi"],"wdecoster/chopper","chopper",None,"Rust filter/trimmer for long reads by quality, length and contaminants.","Replaces NanoFilt.",[]),
+ ("deacon","deacon","qc",["ont","hifi","sr"],"bede/deacon","deacon",None,"Fast alignment-free minimizer filter for host/contaminant depletion of reads.","Index choice decides what is removed; keep the depleted fraction for audit.",[]),
  ("filtlong","Filtlong","qc",["ont"],"rrwick/Filtlong","filtlong",None,"Keeps the best reads by length and quality, optionally guided by short reads.","Subset for isolate assembly.",[]),
  ("fastplong","fastplong","qc",["ont","hifi"],"OpenGene/fastplong","fastplong",None,"fastp for long reads: adapter trimming, filtering, report.","",["artefact"]),
  ("seqkit","SeqKit","qc",["ont","hifi","sr"],"shenwei356/seqkit","seqkit",None,"Swiss-army knife for FASTA/Q manipulation and stats.","",[]),
@@ -110,6 +112,7 @@ T = [
  ("pypolca","pypolca","polish",["sr"],"gbouras13/pypolca","pypolca",None,"Python POLCA short-read polisher.","Pair with Polypolish.",[]),
  # bin
  ("semibin2","SemiBin2","bin",["ont","hifi","sr"],"BigDataBiology/SemiBin","semibin",None,"Self-supervised binning with long-read mode.","",[]),
+ ("metacat","MetaCAT","bin",["ont","hifi","sr"],"liu-congcong/MetaCAT","metacat",None,"Metagenome binning by coverage and composition clustering.","Default binner in aviary 0.14.",[]),
  ("comebin","COMEBin","bin",["ont","hifi","sr"],"ziyewang/COMEBin","comebin",None,"Contrastive-learning binner.","",[]),
  ("vamb","VAMB / TaxVAMB","bin",["ont","hifi","sr"],"RasmussenLab/vamb","vamb",None,"Variational-autoencoder binner, optional taxonomy guidance.","",[]),
  ("metabat2","MetaBAT 2","bin",["ont","hifi","sr"],None,"metabat2","https://bitbucket.org/berkeleylab/metabat","Classic composition+coverage binner.","",[]),
