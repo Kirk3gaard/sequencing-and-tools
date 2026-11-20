@@ -91,6 +91,7 @@ T = [
  ("ganon","ganon","profile",["ont","hifi","sr"],"pirovc/ganon","ganon",None,"Classification and profiling with easy custom/NCBI databases.","",[]),
  # assemble
  ("metaflye","metaFlye (Flye)","assemble",["ont","hifi"],"mikolmogorov/Flye","flye",None,"Repeat-graph assembler with metagenome mode.","Long-time long-read metagenome default.",[]),
+ ("haricot","HARICOT","assemble",["ont"],"STORMgroup/HARICOT",None,None,"Assembles raw nanopore signal before basecalling (fuzzy de Bruijn graphs, Hough-transform overlaps).","Experimental (Nov 2026); isolate-tested, not metagenomes.",[]),
  ("myloasm","myloasm","assemble",["ont","hifi"],"bluenote-1577/myloasm","myloasm",None,"Strain-resolving metagenome assembler for R10 and HiFi.","New; worth benchmarking against metaFlye.",[]),
  ("metamdbg","metaMDBG","assemble",["ont","hifi"],"GaetanBenoitDev/metaMDBG","metamdbg",None,"Minimizer de Bruijn graph metagenome assembler.","Fast, low memory; ONT support since v1.",[]),
  ("hifiasm","hifiasm","assemble",["hifi","ont"],"chhylp123/hifiasm","hifiasm",None,"Haplotype-resolved assembler; ONT simplex (--ont) supported.","Isolates and eukaryotes.",[]),
@@ -145,6 +146,7 @@ T = [
  ("kofamscan","KofamScan","annotate",["ont","hifi","sr"],None,"kofamscan","https://github.com/takaram/kofam_scan","KEGG Orthology assignment with HMMs.","",[]),
  # methyl
  ("modkit","modkit","methyl",["ont","hifi"],"nanoporetech/modkit",None,None,"Modified-base pileups, motif search and DMR from BAM MM/ML tags.","",[]),
+ ("rawmod","RawMod","methyl",["ont"],"STORMgroup/RawMod",None,None,"Control-free detection of modified sites (5mC, 5hmC, 4mC, 6mA, 5hmU) from raw-signal pileups with one small transformer.","New (Nov 2026); candidate for bacterial modifications outside Dorado's models.",[]),
  ("nanomotif","nanomotif","methyl",["ont"],"MicrobialDarkMatter/nanomotif","nanomotif",None,"De novo methylation motifs in MAGs, MTase linking, bin decontamination.","Methylation-aware bin cleaning and plasmid assignment.",[]),
  ("microbemod","MicrobeMod","methyl",["ont"],"cultivarium/MicrobeMod",None,None,"Bacterial methylation motifs and R-M system annotation.","",[]),
  ("methylartist","methylartist","methyl",["ont","hifi"],"adamewing/methylartist","methylartist",None,"Methylation plots from modified-base BAMs.","",[]),

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-20",
  "tools": {
   "minknow": {},
   "pod5": {
@@ -188,19 +188,19 @@
   },
   "barbell": {
    "github": {
-    "version": "v0.3.3",
-    "title": "v0.3.3",
-    "date": "2026-05-22",
-    "href": "https://github.com/rickbeeloo/barbell/releases/tag/v0.3.3",
+    "version": "v0.4.0",
+    "title": "v0.4.0",
+    "date": "2026-11-14",
+    "href": "https://github.com/rickbeeloo/barbell/releases/tag/v0.4.0",
     "kind": "release"
    },
-   "last_commit": "2026-09-05",
+   "last_commit": "2026-11-14",
    "bioconda": {
-    "version": "0.3.3",
-    "date": "2026-05-25"
+    "version": "0.4.0",
+    "date": "2026-11-17"
    },
-   "version": "0.3.3",
-   "date": "2026-05-22",
+   "version": "0.4.0",
+   "date": "2026-11-14",
    "source": "github release"
   },
   "lima": {
@@ -351,19 +351,19 @@
   },
   "deacon": {
    "github": {
-    "version": "0.19.1",
-    "title": "0.19.1",
-    "date": "2026-10-26",
-    "href": "https://github.com/bede/deacon/releases/tag/0.19.1",
+    "version": "0.20.0",
+    "title": "0.20.0",
+    "date": "2026-11-18",
+    "href": "https://github.com/bede/deacon/releases/tag/0.20.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-18",
    "bioconda": {
-    "version": "0.19.1",
-    "date": "2026-11-02"
+    "version": "0.20.0",
+    "date": "2026-11-18"
    },
-   "version": "0.19.1",
-   "date": "2026-10-26",
+   "version": "0.20.0",
+   "date": "2026-11-18",
    "source": "github release"
   },
   "filtlong": {
@@ -425,7 +425,7 @@
     "href": "https://github.com/mbhall88/rasusa/releases/tag/5.1.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-01",
+   "last_commit": "2026-11-20",
    "bioconda": {
     "version": "5.1.0",
     "date": "2026-07-31"
@@ -459,7 +459,7 @@
     "href": "https://github.com/MultiQC/MultiQC/releases/tag/v1.35",
     "kind": "release"
    },
-   "last_commit": "2026-10-06",
+   "last_commit": "2026-11-13",
    "bioconda": {
     "version": "1.35",
     "date": "2026-05-13"
@@ -587,7 +587,7 @@
     "href": "https://github.com/BenLangmead/bowtie2/releases/tag/v2.5.5",
     "kind": "release"
    },
-   "last_commit": "2026-11-07",
+   "last_commit": "2026-11-19",
    "bioconda": {
     "version": "2.5.5",
     "date": "2026-02-20"
@@ -689,7 +689,7 @@
     "href": "https://github.com/bluenote-1577/sylph/releases/tag/v1.0.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-08",
+   "last_commit": "2026-11-16",
    "bioconda": {
     "version": "1.0.0",
     "date": "2026-09-14"
@@ -785,53 +785,66 @@
   },
   "ganon": {
    "github": {
-    "version": "v2.4.4",
-    "title": "ganon v2.4.4",
-    "date": "2026-10-06",
-    "href": "https://github.com/pirovc/ganon/releases/tag/v2.4.4",
+    "version": "v2.5.0",
+    "title": "ganon v2.5.0",
+    "date": "2026-11-16",
+    "href": "https://github.com/pirovc/ganon/releases/tag/v2.5.0",
     "kind": "release"
    },
-   "last_commit": "2026-10-06",
+   "last_commit": "2026-11-16",
    "bioconda": {
-    "version": "2.4.4",
-    "date": "2026-10-07"
+    "version": "2.5.0",
+    "date": "2026-11-16"
    },
-   "version": "2.4.4",
-   "date": "2026-10-06",
+   "version": "2.5.0",
+   "date": "2026-11-16",
    "source": "github release"
   },
   "metaflye": {
    "github": {
-    "version": "2.9.6",
-    "title": "Flye 2.9.6 release",
-    "date": "2025-05-02",
-    "href": "https://github.com/mikolmogorov/Flye/releases/tag/2.9.6",
+    "version": "2.9.7",
+    "title": "Flye 2.9.7 release",
+    "date": "2026-11-17",
+    "href": "https://github.com/mikolmogorov/Flye/releases/tag/2.9.7",
     "kind": "release"
    },
-   "last_commit": "2025-05-02",
+   "last_commit": "2026-11-17",
    "bioconda": {
     "version": "2.9.6",
     "date": "2025-05-06"
    },
-   "version": "2.9.6",
-   "date": "2025-05-02",
+   "version": "2.9.7",
+   "date": "2026-11-17",
+   "source": "github release"
+  },
+  "haricot": {
+   "github": {
+    "version": "v1.0.1",
+    "title": "v1.0.1",
+    "date": "2026-11-13",
+    "href": "https://github.com/STORMgroup/HARICOT/releases/tag/v1.0.1",
+    "kind": "release"
+   },
+   "last_commit": "2026-11-13",
+   "version": "1.0.1",
+   "date": "2026-11-13",
    "source": "github release"
   },
   "myloasm": {
    "github": {
-    "version": "v0.7.0",
-    "title": "v0.7.0",
-    "date": "2026-09-09",
-    "href": "https://github.com/bluenote-1577/myloasm/releases/tag/v0.7.0",
+    "version": "v0.7.1",
+    "title": "v0.7.1",
+    "date": "2026-11-19",
+    "href": "https://github.com/bluenote-1577/myloasm/releases/tag/v0.7.1",
     "kind": "release"
    },
    "last_commit": "2026-11-10",
    "bioconda": {
-    "version": "0.7.0",
-    "date": "2026-09-09"
+    "version": "0.7.1",
+    "date": "2026-11-19"
    },
-   "version": "0.7.0",
-   "date": "2026-09-09",
+   "version": "0.7.1",
+   "date": "2026-11-19",
    "source": "github release"
   },
   "metamdbg": {
@@ -893,7 +906,7 @@
     "href": "https://github.com/rrwick/Autocycler/releases/tag/v0.8.1",
     "kind": "release"
    },
-   "last_commit": "2026-11-12",
+   "last_commit": "2026-11-20",
    "bioconda": {
     "version": "0.8.1",
     "date": "2026-11-13"
@@ -1121,19 +1134,19 @@
   },
   "semibin2": {
    "github": {
-    "version": "v2.6.0",
-    "title": "Version 2.6.0",
-    "date": "2026-10-13",
-    "href": "https://github.com/BigDataBiology/SemiBin/releases/tag/v2.6.0",
+    "version": "v2.6.1",
+    "title": "Version 2.6.1",
+    "date": "2026-11-15",
+    "href": "https://github.com/BigDataBiology/SemiBin/releases/tag/v2.6.1",
     "kind": "release"
    },
-   "last_commit": "2026-11-10",
+   "last_commit": "2026-11-15",
    "bioconda": {
-    "version": "2.6.0",
-    "date": "2026-10-13"
+    "version": "2.6.1",
+    "date": "2026-11-15"
    },
-   "version": "2.6.0",
-   "date": "2026-10-13",
+   "version": "2.6.1",
+   "date": "2026-11-15",
    "source": "github release"
   },
   "metacat": {
@@ -1215,19 +1228,19 @@
   },
   "binette": {
    "github": {
-    "version": "v1.2.1",
-    "title": "Binette v1.2.1",
-    "date": "2025-11-07",
-    "href": "https://github.com/genotoul-bioinfo/Binette/releases/tag/v1.2.1",
+    "version": "v1.3.0",
+    "title": "Binette v1.3.0",
+    "date": "2026-11-17",
+    "href": "https://github.com/genotoul-bioinfo/Binette/releases/tag/v1.3.0",
     "kind": "release"
    },
-   "last_commit": "2026-09-28",
+   "last_commit": "2026-11-17",
    "bioconda": {
-    "version": "1.2.1",
-    "date": "2025-11-10"
+    "version": "1.3.0",
+    "date": "2026-11-18"
    },
-   "version": "1.2.1",
-   "date": "2025-11-07",
+   "version": "1.3.0",
+   "date": "2026-11-17",
    "source": "github release"
   },
   "dastool": {
@@ -1266,19 +1279,19 @@
   },
   "checkm": {
    "github": {
-    "version": "v1.3.0",
-    "title": "v1.3.0",
-    "date": "2026-11-10",
-    "href": "https://github.com/Ecogenomics/CheckM/releases/tag/v1.3.0",
+    "version": "v1.3.2",
+    "title": "v1.3.2",
+    "date": "2026-11-19",
+    "href": "https://github.com/Ecogenomics/CheckM/releases/tag/v1.3.2",
     "kind": "release"
    },
-   "last_commit": "2026-11-10",
+   "last_commit": "2026-11-20",
    "bioconda": {
     "version": "1.3.0",
     "date": "2026-11-10"
    },
-   "version": "1.3.0",
-   "date": "2026-11-10",
+   "version": "1.3.2",
+   "date": "2026-11-19",
    "source": "github release"
   },
   "gunc": {
@@ -1317,19 +1330,19 @@
   },
   "galah": {
    "github": {
-    "version": "v0.6.4",
-    "title": "v0.6.4",
-    "date": "2026-11-10",
-    "href": "https://github.com/wwood/galah/releases/tag/v0.6.4",
+    "version": "v0.7.0",
+    "title": "0.7.0 - 2026-11-19",
+    "date": "2026-11-19",
+    "href": "https://github.com/wwood/galah/releases/tag/v0.7.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-10",
+   "last_commit": "2026-11-19",
    "bioconda": {
-    "version": "0.6.4",
-    "date": "2026-11-10"
+    "version": "0.7.0",
+    "date": "2026-11-19"
    },
-   "version": "0.6.4",
-   "date": "2026-11-10",
+   "version": "0.7.0",
+   "date": "2026-11-19",
    "source": "github release"
   },
   "quast": {
@@ -1375,7 +1388,7 @@
     "href": "https://github.com/Ecogenomics/GTDBTk/releases/tag/2.8.0",
     "kind": "release"
    },
-   "last_commit": "2026-10-13",
+   "last_commit": "2026-11-18",
    "bioconda": {
     "version": "2.8.0",
     "date": "2026-10-13"
@@ -1470,7 +1483,7 @@
    "source": "github release"
   },
   "dram": {
-   "last_commit": "2026-11-09",
+   "last_commit": "2026-11-20",
    "bioconda": {
     "version": "1.5.0",
     "date": "2024-03-25"
@@ -1532,36 +1545,36 @@
   },
   "diamond": {
    "github": {
-    "version": "v2.2.8",
-    "title": "DIAMOND v2.2.8",
-    "date": "2026-09-20",
-    "href": "https://github.com/bbuchfink/diamond/releases/tag/v2.2.8",
+    "version": "v2.2.9",
+    "title": "DIAMOND v2.2.9",
+    "date": "2026-11-15",
+    "href": "https://github.com/bbuchfink/diamond/releases/tag/v2.2.9",
     "kind": "release"
    },
-   "last_commit": "2026-11-12",
+   "last_commit": "2026-11-19",
    "bioconda": {
-    "version": "2.2.8",
-    "date": "2026-09-20"
+    "version": "2.2.9",
+    "date": "2026-11-16"
    },
-   "version": "2.2.8",
-   "date": "2026-09-20",
+   "version": "2.2.9",
+   "date": "2026-11-15",
    "source": "github release"
   },
   "mmseqs2": {
    "github": {
-    "version": "18-8cc5c",
-    "title": "MMseqs2 Release 18-8cc5c",
-    "date": "2025-07-28",
-    "href": "https://github.com/soedinglab/MMseqs2/releases/tag/18-8cc5c",
+    "version": "19-ab57c",
+    "title": "MMseqs2 Release 19-ab57c",
+    "date": "2026-11-19",
+    "href": "https://github.com/soedinglab/MMseqs2/releases/tag/19-ab57c",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-18",
    "bioconda": {
     "version": "17.b804f",
     "date": "2025-01-18"
    },
-   "version": "18-8cc5c",
-   "date": "2025-07-28",
+   "version": "19-ab57c",
+   "date": "2026-11-19",
    "source": "github release"
   },
   "kofamscan": {
@@ -1585,6 +1598,9 @@
    "version": "0.6.4",
    "date": "2026-06-12",
    "source": "github release"
+  },
+  "rawmod": {
+   "last_commit": "2026-11-12"
   },
   "nanomotif": {
    "github": {
@@ -1624,7 +1640,7 @@
     "href": "https://github.com/adamewing/methylartist/releases/tag/1.6.0",
     "kind": "release"
    },
-   "last_commit": "2026-10-10",
+   "last_commit": "2026-11-19",
    "bioconda": {
     "version": "1.6.0",
     "date": "2026-10-09"
@@ -1667,7 +1683,7 @@
     "href": "https://github.com/HKU-BAL/Clair3/releases/tag/v2.0.5",
     "kind": "release"
    },
-   "last_commit": "2026-11-06",
+   "last_commit": "2026-11-18",
    "bioconda": {
     "version": "2.0.5",
     "date": "2026-11-09"
@@ -1752,7 +1768,7 @@
     "href": "https://github.com/wwood/CoverM/releases/tag/v0.8.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-04",
+   "last_commit": "2026-11-18",
    "bioconda": {
     "version": "0.8.0",
     "date": "2026-07-08"
@@ -1913,36 +1929,36 @@
   },
   "snakemake": {
    "github": {
-    "version": "v9.27.1",
-    "title": "v9.27.1",
-    "date": "2026-10-21",
-    "href": "https://github.com/snakemake/snakemake/releases/tag/v9.27.1",
+    "version": "v9.27.2",
+    "title": "v9.27.2",
+    "date": "2026-11-15",
+    "href": "https://github.com/snakemake/snakemake/releases/tag/v9.27.2",
     "kind": "release"
    },
-   "last_commit": "2026-11-12",
+   "last_commit": "2026-11-17",
    "bioconda": {
-    "version": "9.27.1",
-    "date": "2026-10-21"
+    "version": "9.27.2",
+    "date": "2026-11-18"
    },
-   "version": "9.27.1",
-   "date": "2026-10-21",
+   "version": "9.27.2",
+   "date": "2026-11-15",
    "source": "github release"
   },
   "nextflow": {
    "github": {
-    "version": "v26.10.6",
-    "title": "Version 26.10.6",
-    "date": "2026-11-12",
-    "href": "https://github.com/nextflow-io/nextflow/releases/tag/v26.10.6",
+    "version": "v26.11.0-edge",
+    "title": "Version 26.11.0-edge",
+    "date": "2026-11-18",
+    "href": "https://github.com/nextflow-io/nextflow/releases/tag/v26.11.0-edge",
     "kind": "release"
    },
-   "last_commit": "2026-11-13",
+   "last_commit": "2026-11-19",
    "bioconda": {
-    "version": "26.10.5",
-    "date": "2026-11-05"
+    "version": "26.10.6",
+    "date": "2026-11-14"
    },
-   "version": "26.10.6",
-   "date": "2026-11-12",
+   "version": "26.11.0-edge",
+   "date": "2026-11-18",
    "source": "github release"
   },
   "bandageng": {
@@ -1966,7 +1982,7 @@
     "href": "https://github.com/igvteam/igv/releases/tag/v2.19.8",
     "kind": "release"
    },
-   "last_commit": "2026-11-12",
+   "last_commit": "2026-11-19",
    "version": "2.19.8",
    "date": "2026-06-05",
    "source": "github release"
@@ -1979,7 +1995,7 @@
     "href": "https://github.com/merenlab/anvio/releases/tag/v9",
     "kind": "release"
    },
-   "last_commit": "2026-11-12",
+   "last_commit": "2026-11-19",
    "version": "9",
    "date": "2026-04-01",
    "source": "github release"
