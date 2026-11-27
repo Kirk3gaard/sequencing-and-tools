@@ -92,6 +92,7 @@ T = [
  # assemble
  ("metaflye","metaFlye (Flye)","assemble",["ont","hifi"],"mikolmogorov/Flye","flye",None,"Repeat-graph assembler with metagenome mode.","Long-time long-read metagenome default.",[]),
  ("haricot","HARICOT","assemble",["ont"],"STORMgroup/HARICOT",None,None,"Assembles raw nanopore signal before basecalling (fuzzy de Bruijn graphs, Hough-transform overlaps).","Experimental (Nov 2026); isolate-tested, not metagenomes.",[]),
+ ("gallifrey","Gallifrey","assemble",["hifi"],"BilkentCompGen/gallifrey",None,None,"HiFi assembler on a locally consistent de Bruijn graph; >6x faster than rust-mdbg at half the memory.","New (Nov 2026); tested on isolates/human, not metagenomes.",[]),
  ("myloasm","myloasm","assemble",["ont","hifi"],"bluenote-1577/myloasm","myloasm",None,"Strain-resolving metagenome assembler for R10 and HiFi.","New; worth benchmarking against metaFlye.",[]),
  ("metamdbg","metaMDBG","assemble",["ont","hifi"],"GaetanBenoitDev/metaMDBG","metamdbg",None,"Minimizer de Bruijn graph metagenome assembler.","Fast, low memory; ONT support since v1.",[]),
  ("hifiasm","hifiasm","assemble",["hifi","ont"],"chhylp123/hifiasm","hifiasm",None,"Haplotype-resolved assembler; ONT simplex (--ont) supported.","Isolates and eukaryotes.",[]),
@@ -149,6 +150,7 @@ T = [
  ("rawmod","RawMod","methyl",["ont"],"STORMgroup/RawMod",None,None,"Control-free detection of modified sites (5mC, 5hmC, 4mC, 6mA, 5hmU) from raw-signal pileups with one small transformer.","New (Nov 2026); candidate for bacterial modifications outside Dorado's models.",[]),
  ("nanomotif","nanomotif","methyl",["ont"],"MicrobialDarkMatter/nanomotif","nanomotif",None,"De novo methylation motifs in MAGs, MTase linking, bin decontamination.","Methylation-aware bin cleaning and plasmid assignment.",[]),
  ("microbemod","MicrobeMod","methyl",["ont"],"cultivarium/MicrobeMod",None,None,"Bacterial methylation motifs and R-M system annotation.","",[]),
+ ("hammerhead","Hammerhead","methyl",["ont"],"lrslab/Hammerhead",None,None,"De novo detection of bacterial 4mC, 5mC and 6mA sites from strand-specific basecall mismatches between forward and reverse reads (no raw signal or control needed).","Genome Res 2024; CityU HK filed a US patent on the method (US 2026/0375280 A1, Nov 2026).",[]),
  ("methylartist","methylartist","methyl",["ont","hifi"],"adamewing/methylartist","methylartist",None,"Methylation plots from modified-base BAMs.","",[]),
  ("methbat","MethBat","methyl",["hifi"],"PacificBiosciences/MethBat",None,None,"PacBio methylation analysis toolkit.","Replaces pb-CpG-tools.",[]),
  ("pbcpg","pb-CpG-tools","methyl",["hifi"],"PacificBiosciences/pb-CpG-tools",None,None,"CpG pileups from HiFi.","Superseded by MethBat.",["legacy"]),

@@ -960,6 +960,20 @@
    "flags": []
   },
   {
+   "id": "gallifrey",
+   "name": "Gallifrey",
+   "step": "assemble",
+   "platforms": [
+    "hifi"
+   ],
+   "repo": "BilkentCompGen/gallifrey",
+   "bioconda": null,
+   "url": "https://github.com/BilkentCompGen/gallifrey",
+   "desc": "HiFi assembler on a locally consistent de Bruijn graph; >6x faster than rust-mdbg at half the memory.",
+   "note": "New (Nov 2026); tested on isolates/human, not metagenomes.",
+   "flags": []
+  },
+  {
    "id": "myloasm",
    "name": "myloasm",
    "step": "assemble",
@@ -1744,6 +1758,20 @@
    "url": "https://github.com/cultivarium/MicrobeMod",
    "desc": "Bacterial methylation motifs and R-M system annotation.",
    "note": "",
+   "flags": []
+  },
+  {
+   "id": "hammerhead",
+   "name": "Hammerhead",
+   "step": "methyl",
+   "platforms": [
+    "ont"
+   ],
+   "repo": "lrslab/Hammerhead",
+   "bioconda": null,
+   "url": "https://github.com/lrslab/Hammerhead",
+   "desc": "De novo detection of bacterial 4mC, 5mC and 6mA sites from strand-specific basecall mismatches between forward and reverse reads (no raw signal or control needed).",
+   "note": "Genome Res 2024; CityU HK filed a US patent on the method (US 2026/0375280 A1, Nov 2026).",
    "flags": []
   },
   {

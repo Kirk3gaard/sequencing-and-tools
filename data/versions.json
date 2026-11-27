@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-27",
  "tools": {
   "minknow": {},
   "pod5": {
@@ -53,15 +53,15 @@
   "bases2fastq": {},
   "dorado": {
    "github": {
-    "version": "v2.1.2",
-    "title": "v2.1.2",
-    "date": "2026-08-26",
-    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "version": "v2.2.0",
+    "title": "v2.2.0",
+    "date": "2026-11-23",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.2.0",
     "kind": "release"
    },
-   "last_commit": "2026-08-26",
-   "version": "2.1.2",
-   "date": "2026-08-26",
+   "last_commit": "2026-11-22",
+   "version": "2.2.0",
+   "date": "2026-11-23",
    "source": "github release"
   },
   "bonito": {
@@ -94,15 +94,15 @@
   "guppy": {},
   "dorado_trim": {
    "github": {
-    "version": "v2.1.2",
-    "title": "v2.1.2",
-    "date": "2026-08-26",
-    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "version": "v2.2.0",
+    "title": "v2.2.0",
+    "date": "2026-11-23",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.2.0",
     "kind": "release"
    },
-   "last_commit": "2026-08-26",
-   "version": "2.1.2",
-   "date": "2026-08-26",
+   "last_commit": "2026-11-22",
+   "version": "2.2.0",
+   "date": "2026-11-23",
    "source": "github release"
   },
   "porechop_abi": {
@@ -323,7 +323,7 @@
     "href": "https://github.com/wdecoster/cramino/releases/tag/v2.0.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-10",
+   "last_commit": "2026-11-22",
    "bioconda": {
     "version": "2.0.0",
     "date": "2026-09-24"
@@ -340,7 +340,7 @@
     "href": "https://github.com/wdecoster/chopper/releases/tag/v0.15.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-01",
+   "last_commit": "2026-11-22",
    "bioconda": {
     "version": "0.15.0",
     "date": "2026-11-01"
@@ -419,19 +419,19 @@
   },
   "rasusa": {
    "github": {
-    "version": "5.1.0",
-    "title": "v5.1.0",
-    "date": "2026-07-31",
-    "href": "https://github.com/mbhall88/rasusa/releases/tag/5.1.0",
+    "version": "5.1.1",
+    "title": "v5.1.1",
+    "date": "2026-11-20",
+    "href": "https://github.com/mbhall88/rasusa/releases/tag/5.1.1",
     "kind": "release"
    },
    "last_commit": "2026-11-20",
    "bioconda": {
-    "version": "5.1.0",
-    "date": "2026-07-31"
+    "version": "5.1.1",
+    "date": "2026-11-22"
    },
-   "version": "5.1.0",
-   "date": "2026-07-31",
+   "version": "5.1.1",
+   "date": "2026-11-20",
    "source": "github release"
   },
   "fastqc": {
@@ -459,7 +459,7 @@
     "href": "https://github.com/MultiQC/MultiQC/releases/tag/v1.35",
     "kind": "release"
    },
-   "last_commit": "2026-11-13",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "1.35",
     "date": "2026-05-13"
@@ -470,15 +470,15 @@
   },
   "dorado_correct": {
    "github": {
-    "version": "v2.1.2",
-    "title": "v2.1.2",
-    "date": "2026-08-26",
-    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "version": "v2.2.0",
+    "title": "v2.2.0",
+    "date": "2026-11-23",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.2.0",
     "kind": "release"
    },
-   "last_commit": "2026-08-26",
-   "version": "2.1.2",
-   "date": "2026-08-26",
+   "last_commit": "2026-11-22",
+   "version": "2.2.0",
+   "date": "2026-11-23",
    "source": "github release"
   },
   "herro": {
@@ -587,7 +587,7 @@
     "href": "https://github.com/BenLangmead/bowtie2/releases/tag/v2.5.5",
     "kind": "release"
    },
-   "last_commit": "2026-11-19",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "2.5.5",
     "date": "2026-02-20"
@@ -604,7 +604,7 @@
     "href": "https://github.com/ksahlin/strobealign/releases/tag/v0.20.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "0.20.0",
     "date": "2026-11-06"
@@ -621,7 +621,7 @@
     "href": "https://github.com/samtools/samtools/releases/tag/1.25",
     "kind": "release"
    },
-   "last_commit": "2026-11-12",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "1.25",
     "date": "2026-10-27"
@@ -734,19 +734,19 @@
   },
   "metaphlan": {
    "github": {
-    "version": "4.2.6",
-    "title": "4.2.6",
-    "date": "2026-07-28",
-    "href": "https://github.com/biobakery/MetaPhlAn/releases/tag/4.2.6",
+    "version": "4.3",
+    "title": "4.3",
+    "date": "2026-11-26",
+    "href": "https://github.com/biobakery/MetaPhlAn/releases/tag/4.3",
     "kind": "release"
    },
-   "last_commit": "2026-11-11",
+   "last_commit": "2026-11-26",
    "bioconda": {
-    "version": "4.2.6",
-    "date": "2026-07-29"
+    "version": "4.3",
+    "date": "2026-11-26"
    },
-   "version": "4.2.6",
-   "date": "2026-07-28",
+   "version": "4.3",
+   "date": "2026-11-26",
    "source": "github release"
   },
   "motus": {
@@ -785,19 +785,19 @@
   },
   "ganon": {
    "github": {
-    "version": "v2.5.0",
-    "title": "ganon v2.5.0",
-    "date": "2026-11-16",
-    "href": "https://github.com/pirovc/ganon/releases/tag/v2.5.0",
+    "version": "v2.6.0",
+    "title": "ganon v2.6.0",
+    "date": "2026-11-20",
+    "href": "https://github.com/pirovc/ganon/releases/tag/v2.6.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-16",
+   "last_commit": "2026-11-20",
    "bioconda": {
-    "version": "2.5.0",
-    "date": "2026-11-16"
+    "version": "2.6.0",
+    "date": "2026-11-20"
    },
-   "version": "2.5.0",
-   "date": "2026-11-16",
+   "version": "2.6.0",
+   "date": "2026-11-20",
    "source": "github release"
   },
   "metaflye": {
@@ -808,10 +808,10 @@
     "href": "https://github.com/mikolmogorov/Flye/releases/tag/2.9.7",
     "kind": "release"
    },
-   "last_commit": "2026-11-17",
+   "last_commit": "2026-11-22",
    "bioconda": {
-    "version": "2.9.6",
-    "date": "2025-05-06"
+    "version": "2.9.7",
+    "date": "2026-11-20"
    },
    "version": "2.9.7",
    "date": "2026-11-17",
@@ -825,10 +825,13 @@
     "href": "https://github.com/STORMgroup/HARICOT/releases/tag/v1.0.1",
     "kind": "release"
    },
-   "last_commit": "2026-11-13",
+   "last_commit": "2026-11-24",
    "version": "1.0.1",
    "date": "2026-11-13",
    "source": "github release"
+  },
+  "gallifrey": {
+   "last_commit": "2026-11-05"
   },
   "myloasm": {
    "github": {
@@ -951,19 +954,19 @@
   },
   "megahit": {
    "github": {
-    "version": "v1.2.9",
-    "title": "v1.2.9",
-    "date": "2019-10-15",
-    "href": "https://github.com/voutcn/megahit/releases/tag/v1.2.9",
+    "version": "r20261126",
+    "title": "r20261126",
+    "date": "2026-11-26",
+    "href": "https://github.com/voutcn/megahit/releases/tag/r20261126",
     "kind": "release"
    },
-   "last_commit": "2025-10-28",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "1.2.9",
     "date": "2019-10-15"
    },
-   "version": "1.2.9",
-   "date": "2019-10-15",
+   "version": "20261126",
+   "date": "2026-11-26",
    "source": "github release"
   },
   "spades": {
@@ -1061,24 +1064,24 @@
    },
    "last_commit": "2026-05-20",
    "bioconda": {
-    "version": "2.2.2",
-    "date": "2026-05-21"
+    "version": "2.3.0",
+    "date": "2026-11-26"
    },
-   "version": "2.2.2",
-   "date": "2026-05-20",
-   "source": "github release"
+   "version": "2.3.0",
+   "date": "2026-11-26",
+   "source": "bioconda"
   },
   "dorado_polish": {
    "github": {
-    "version": "v2.1.2",
-    "title": "v2.1.2",
-    "date": "2026-08-26",
-    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.1.2",
+    "version": "v2.2.0",
+    "title": "v2.2.0",
+    "date": "2026-11-23",
+    "href": "https://github.com/nanoporetech/dorado/releases/tag/v2.2.0",
     "kind": "release"
    },
-   "last_commit": "2026-08-26",
-   "version": "2.1.2",
-   "date": "2026-08-26",
+   "last_commit": "2026-11-22",
+   "version": "2.2.0",
+   "date": "2026-11-23",
    "source": "github release"
   },
   "racon": {
@@ -1151,19 +1154,19 @@
   },
   "metacat": {
    "github": {
-    "version": "MetaCAT-1.0.7",
-    "title": "MetaCAT-1.0.7",
-    "date": "2026-09-22",
-    "href": "https://github.com/liu-congcong/MetaCAT/releases/tag/MetaCAT-1.0.7",
+    "version": "v1.0.8",
+    "title": "MetaCAT-1.0.8",
+    "date": "2026-11-21",
+    "href": "https://github.com/liu-congcong/MetaCAT/releases/tag/v1.0.8",
     "kind": "release"
    },
-   "last_commit": "2026-09-22",
+   "last_commit": "2026-11-21",
    "bioconda": {
     "version": "1.0.6",
     "date": "2026-09-09"
    },
-   "version": "1.0.7",
-   "date": "2026-09-22",
+   "version": "1.0.8",
+   "date": "2026-11-21",
    "source": "github release"
   },
   "comebin": {
@@ -1279,19 +1282,19 @@
   },
   "checkm": {
    "github": {
-    "version": "v1.3.2",
-    "title": "v1.3.2",
-    "date": "2026-11-19",
-    "href": "https://github.com/Ecogenomics/CheckM/releases/tag/v1.3.2",
+    "version": "v1.4.0",
+    "title": "v1.4.0",
+    "date": "2026-11-23",
+    "href": "https://github.com/Ecogenomics/CheckM/releases/tag/v1.4.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-20",
+   "last_commit": "2026-11-27",
    "bioconda": {
-    "version": "1.3.0",
-    "date": "2026-11-10"
+    "version": "1.4.0",
+    "date": "2026-11-23"
    },
-   "version": "1.3.2",
-   "date": "2026-11-19",
+   "version": "1.4.0",
+   "date": "2026-11-23",
    "source": "github release"
   },
   "gunc": {
@@ -1336,7 +1339,7 @@
     "href": "https://github.com/wwood/galah/releases/tag/v0.7.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-19",
+   "last_commit": "2026-11-27",
    "bioconda": {
     "version": "0.7.0",
     "date": "2026-11-19"
@@ -1353,7 +1356,7 @@
     "href": "https://github.com/ablab/quast/releases/tag/quast_5.3.0",
     "kind": "release"
    },
-   "last_commit": "2026-06-10",
+   "last_commit": "2026-11-20",
    "bioconda": {
     "version": "5.3.0",
     "date": "2024-11-10"
@@ -1405,14 +1408,14 @@
     "href": "https://github.com/MGXlab/CAT_pack/releases/tag/v6.0.1",
     "kind": "release"
    },
-   "last_commit": "2026-11-09",
+   "last_commit": "2026-11-26",
    "bioconda": {
-    "version": "6.0.1",
-    "date": "2024-11-06"
+    "version": "7.0.0b0",
+    "date": "2026-11-20"
    },
-   "version": "6.0.1",
-   "date": "2024-03-12",
-   "source": "github release"
+   "version": "7.0.0b0",
+   "date": "2026-11-20",
+   "source": "bioconda"
   },
   "bakta": {
    "github": {
@@ -1483,7 +1486,7 @@
    "source": "github release"
   },
   "dram": {
-   "last_commit": "2026-11-20",
+   "last_commit": "2026-11-21",
    "bioconda": {
     "version": "1.5.0",
     "date": "2024-03-25"
@@ -1500,7 +1503,7 @@
     "href": "https://github.com/antismash/antismash/releases/tag/8-0-4",
     "kind": "release"
    },
-   "last_commit": "2026-11-06",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "8.0.4",
     "date": "2025-09-09"
@@ -1562,19 +1565,19 @@
   },
   "mmseqs2": {
    "github": {
-    "version": "19-ab57c",
-    "title": "MMseqs2 Release 19-ab57c",
-    "date": "2026-11-19",
-    "href": "https://github.com/soedinglab/MMseqs2/releases/tag/19-ab57c",
+    "version": "20-ae60e",
+    "title": "MMseqs2 Release 20-ae60e",
+    "date": "2026-11-23",
+    "href": "https://github.com/soedinglab/MMseqs2/releases/tag/20-ae60e",
     "kind": "release"
    },
-   "last_commit": "2026-11-18",
+   "last_commit": "2026-11-23",
    "bioconda": {
     "version": "17.b804f",
     "date": "2025-01-18"
    },
-   "version": "19-ab57c",
-   "date": "2026-11-19",
+   "version": "20-ae60e",
+   "date": "2026-11-23",
    "source": "github release"
   },
   "kofamscan": {
@@ -1627,9 +1630,22 @@
     "href": "https://github.com/cultivarium/MicrobeMod/releases/tag/v1.5.1",
     "kind": "release"
    },
-   "last_commit": "2026-11-12",
+   "last_commit": "2026-11-20",
    "version": "1.5.1",
    "date": "2026-11-12",
+   "source": "github release"
+  },
+  "hammerhead": {
+   "github": {
+    "version": "Hammerhead-V0.2.0",
+    "title": "v0.2.0",
+    "date": "2024-05-21",
+    "href": "https://github.com/lrslab/Hammerhead/releases/tag/Hammerhead-V0.2.0",
+    "kind": "release"
+   },
+   "last_commit": "2024-11-06",
+   "version": "0.2.0",
+   "date": "2024-05-21",
    "source": "github release"
   },
   "methylartist": {
@@ -1640,7 +1656,7 @@
     "href": "https://github.com/adamewing/methylartist/releases/tag/1.6.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-19",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "1.6.0",
     "date": "2026-10-09"
@@ -1677,19 +1693,19 @@
   },
   "clair3": {
    "github": {
-    "version": "v2.0.5",
-    "title": "v2.0.5",
-    "date": "2026-11-06",
-    "href": "https://github.com/HKU-BAL/Clair3/releases/tag/v2.0.5",
+    "version": "v2.0.6",
+    "title": "v2.0.6",
+    "date": "2026-11-26",
+    "href": "https://github.com/HKU-BAL/Clair3/releases/tag/v2.0.6",
     "kind": "release"
    },
-   "last_commit": "2026-11-18",
+   "last_commit": "2026-11-26",
    "bioconda": {
     "version": "2.0.5",
     "date": "2026-11-09"
    },
-   "version": "2.0.5",
-   "date": "2026-11-06",
+   "version": "2.0.6",
+   "date": "2026-11-26",
    "source": "github release"
   },
   "sniffles2": {
@@ -1768,7 +1784,7 @@
     "href": "https://github.com/wwood/CoverM/releases/tag/v0.8.0",
     "kind": "release"
    },
-   "last_commit": "2026-11-18",
+   "last_commit": "2026-11-24",
    "bioconda": {
     "version": "0.8.0",
     "date": "2026-07-08"
@@ -1935,7 +1951,7 @@
     "href": "https://github.com/snakemake/snakemake/releases/tag/v9.27.2",
     "kind": "release"
    },
-   "last_commit": "2026-11-17",
+   "last_commit": "2026-11-24",
    "bioconda": {
     "version": "9.27.2",
     "date": "2026-11-18"
@@ -1952,10 +1968,10 @@
     "href": "https://github.com/nextflow-io/nextflow/releases/tag/v26.11.0-edge",
     "kind": "release"
    },
-   "last_commit": "2026-11-19",
+   "last_commit": "2026-11-20",
    "bioconda": {
-    "version": "26.10.6",
-    "date": "2026-11-14"
+    "version": "26.10.7",
+    "date": "2026-11-22"
    },
    "version": "26.11.0-edge",
    "date": "2026-11-18",
@@ -1976,15 +1992,15 @@
   },
   "igv": {
    "github": {
-    "version": "v2.19.8",
-    "title": "v2.19.8",
-    "date": "2026-06-05",
-    "href": "https://github.com/igvteam/igv/releases/tag/v2.19.8",
+    "version": "v2.19.9",
+    "title": "v2.19.9",
+    "date": "2026-11-20",
+    "href": "https://github.com/igvteam/igv/releases/tag/v2.19.9",
     "kind": "release"
    },
-   "last_commit": "2026-11-19",
-   "version": "2.19.8",
-   "date": "2026-06-05",
+   "last_commit": "2026-11-25",
+   "version": "2.19.9",
+   "date": "2026-11-20",
    "source": "github release"
   },
   "anvio": {
@@ -1995,7 +2011,7 @@
     "href": "https://github.com/merenlab/anvio/releases/tag/v9",
     "kind": "release"
    },
-   "last_commit": "2026-11-19",
+   "last_commit": "2026-11-25",
    "version": "9",
    "date": "2026-04-01",
    "source": "github release"
